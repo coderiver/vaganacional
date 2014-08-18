@@ -1,0 +1,128 @@
+.form
+	position: absolute
+	width: 100%
+	// bottom: -66px  
+	top: 274px 
+	background: #C9CFD6
+	border-radius: 5px 
+	+r(750)
+		position: static
+		width: 295px 
+		margin: 0 auto 
+		background: transparent
+	.form__top
+		background: #F0EFEF
+		border-radius: 5px 
+		padding: 33px 36px 0 36px 
+		height: 126px - 33px
+		+r(750)
+			background: transparent
+			padding: 22px 0 0 0 
+			height: auto
+	.form__bottom
+		height: 65px 
+		text-align: center
+		+r(750)
+			display: none
+		a
+			font-size: 23px 
+			text-decoration: none
+			text-transform: uppercase
+			color: #222E39 
+			margin-left: 120px 
+			line-height: 65px 
+			+r(950)
+				margin-left: 50px 
+				letter-spacing: -1px 
+			&:first-child
+				margin-left: 0 
+			i
+				+s(arr)
+				margin-left: 7px 
+				display: inline-block
+				vertical-align: middle
+	.form__field
+		float: left
+		margin-right: 10px 
+		width: 345px 
+		width: 35%
+		margin-right: 2%  
+		+r(750)
+			float: none
+			width: auto
+			margin: 0 
+			margin-bottom: 12px 
+		input
+			background: #fff 
+			border-radius: 5px
+			font-size: 15px 
+			color: #222E39 
+			width: 100% 
+			+box
+			padding: 0px 15px 
+			height: 39px
+			line-height: 39px  
+			+r(750)
+				background: transparent
+				border: 1px solid #747D85 
+				font-size: 16px 
+				color: #FFFFFF 
+	.form__submit
+		overflow: hidden
+		a
+			display: block
+			border-radius: 5px
+			height: 39px
+			line-height: 39px
+			color: #fff
+			text-decoration: none
+			text-transform: uppercase
+			background-color: #49BF67
+			font-size: 17px 
+			padding-left: 48px 
+			position: relative
+			+r(750)
+				text-align: center
+				padding-left: 0
+				padding-right: 0  
+			i
+				position: absolute
+				+s(search)
+				left: 22px 
+				top: 10px 
+				+r(750)
+					position: static
+					display: inline-block
+					vertical-align: middle
+					margin-right: 8px 
+					position: relative
+					top: -2px 
+					left: auto 
+	.form__recent
+		font-size: 14px 
+		padding-top: 8px 
+		color: #9DA6AF 
+		float: left
+		+r(750)
+			display: none 
+		span
+			font-weight: bold
+			text-decoration: none
+			color: #4EBE6B 
+			margin-right: 14px 
+			margin-left: 7px 
+			i
+				cursor: pointer
+				+s(close)
+				display: inline-block
+				margin-left: 6px 
+	.form__more
+		float: right
+		font-size: 14px 
+		padding-top: 8px 
+		+r(750)
+			display: none
+		a
+			color: #222E39 
+		color: #222E39 
+		

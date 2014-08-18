@@ -1,8 +1,197 @@
 // Normally mainpage styles
+.apply
+	margin: 70px 0 90px 
+	+r(750)
+		margin: 0
+	.apply__in
+		@extend %in
+		+r(750)
+			width: auto 
+			margin: 0 
+	.apply__slides
+		margin-bottom: 70px 
+		position: relative
+		.apply__next,.apply__prev
+			position: absolute
+			top: 50%
+			margin-top: -15px  
+			cursor: pointer
+			z-index: 200 
+			+r(750)
+				display: none  
+		.apply__next
+			+s(next)
+			right: 0
+		.apply__prev
+			+s(prev)
+			left: 0 
+	.apply__header
+		font-size: 45px 
+		color: #000000
+		font-weight: normal
+		text-align: center 
+		margin-bottom: 54px
+		+r(750)
+			display: none
+	.apply__slide
+		width: 100%
+	.apply__pic
+		float: left
+		margin-right: 30px 
+		margin-left: 70px 
+		width: 55% 
+		+r(880)
+			width: 40% 
+		+r(750)
+			width: auto
+			display: none
+		img
+			display: block
+			width: 100% 
+	.apply__content
+		overflow: hidden
+		padding-right: 70px 
+		+r(750)
+			padding-right: 0 
+		ul
+			list-style: none
+			font-size: 15px 
+			color: #575757
+			+r(750)
+				margin: 0 auto 
+			li
+				margin-bottom: 15px 
+				+r(750)
+					margin: 0 auto 
+					border-bottom: 1px solid #E4E5E6 
+			a
+				text-decoration: none
+				color: #575757
+				+r(750)
+					width: 295px 
+					margin: 0 auto 
+					padding: 30px 
+					position: relative
+					display: block
+				&:before
+					content: ' '
+					+r(750)
+						position: absolute
+						top: 50%
+						right: 0
+						+s(arrow)  
+						margin-top: -10px 
+				strong
+					display: block
+					color: #000000
+					font-weight: bold 
+					+r(750)
+						font-size: 15px
+	.apply__more
+		text-transform: uppercase
+		font-size: 13px 
+		color: #F15144
+		text-decoration: underline
+		margin-top: 10px  
+		+r(750)
+			border-top: 1px solid #fff
+			background: #E9EBEC 
+			display: block
+			margin-top: 0
+			text-align: center 
+		a
+			color: #B2B6B9 
+			+r(750)
+				font-size: 14px 
+.apply__sw
+	display: none
+	+r(750)
+		background: #E9EBEC 
+		text-align: center
+		padding: 7px 0
+		display: block
+		width: 100% 
+	a
+		height: 37px 
+		line-height: 37px
+		display: inline-block
+		text-decoration: none
+		text-transform: uppercase
+		color: #38A555
+		width: 143px 
+		background: #fff
+		border-radius: 5px 
+		text-align: center
+		color: #8E9297
+		background: #DCDCDC  
+		margin: 0 5px 
+		font-size: 19px 
+		&.is-active
+			color: #38A555
+			background: #fff 
+		
+.links
+	text-align: center
+	font-size: 15px 
+	color: #41A05A 
+	+r(700)
+		display: none
+	a
+		color: #666 
+		margin: 0 10px
+		text-decoration: none
+		&:hover
+			text-decoration: underline 
 
-
-
-
+.empl
+	background: #F7F7F7
+	+r(750)
+		display: none
+	.empl__in
+		@extend %in
+		padding: 105px 0 42px 0 
+		position: relative
+		overflow: hidden
+	.empl__slides
+		+clr
+		position: relative
+	.empl__slide
+		display: inline-block
+		vertical-align: bottom
+		text-align: center
+		text-decoration: none
+		font-size: 13px
+		color: #A0A0A0 
+		float: left
+		min-height: 100px 
+		position: relative
+		a
+			color: #a0a0a0 
+			text-decoration: none
+		.empl__number
+			position: absolute
+			bottom: 0
+			width: 100%
+			left: 0
+			text-align: center   
+	.empl__title
+		margin-bottom: 30px 
+		text-align: center
+		font-size: 24px 
+		font-weight: normal
+		color: #9EA1A4 
+		text-align: center
+	.empl__next,.empl__prev,.slick-next,.slick-prev
+		position: absolute
+		top: 10px 
+		cursor: pointer
+		+hide-text
+	.emple__next,.slick-next
+		+s(next)
+		right: 0 
+	.empl__prev,.slick-prev
+		+s(prev)
+		left: 0 
 
 
 

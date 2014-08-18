@@ -49,16 +49,38 @@
 
 
 body
-	font-family: Arial, sans-serif 
+	font-family: Tahoma,Arial, sans-serif 
 	font-size: 12px 
 	line-height: 1.4
 
 
 // common blocks      
-
-
-
-
+%in
+	max-width: 977px 
+	margin: 0 auto 
+	+r(1024)
+		width: 95%
+		 
+%upload
+	display: inline-block
+	border-radius: 5px
+	background: #F15144
+	text-transform: uppercase
+	color: #fff
+	text-decoration: none
+	padding: 0 23px 0 14px 
+	font-size: 22px 
+	height: 56px 
+	line-height: 56px 
+	i
+		+s(upload)
+		display: inline-block
+		vertical-align: middle
+		margin-right: 8px 
+		position: relative
+		top: -1px 
+.upload
+	@extend %upload
 
 
 
