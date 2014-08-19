@@ -22,6 +22,13 @@ head.ready(function() {
 		    }
 		  ]
 		});
-
-	console.log($('body').html());
+	$('.js-menu').click(function(event) {
+		$('body').addClass('is-sidebar');
+		return false;
+	});
+	$('.sidenav__overlay').click(function(event) {
+		$('body').removeClass('is-sidebar');
+		return false;
+	});
 });
+
