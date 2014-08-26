@@ -47,12 +47,27 @@
 // p
 // 	+jpg(bla)
 
+//fonts
+	
+=source
+	font-family: 'Source Sans Pro', Tahoma,  sans-serif
+	font-weight: 400
+=source-sb
+	font-family: 'Source Sans Pro', Tahoma,  sans-serif
+	font-weight: 600 	
 
 body
 	font-family: Tahoma,Arial, sans-serif 
 	font-size: 12px 
 	line-height: 1.4
 
+//vars
+
+$darkblue: #222e3a
+$green: #49bf68
+$red: #f4503e
+$blue: #00acee
+$yellow: #fdbe37
 
 // common blocks      
 %in
@@ -64,7 +79,8 @@ body
 %upload
 	display: inline-block
 	border-radius: 5px
-	background: #F15144
+	background: $red
+	+source-sb
 	text-transform: uppercase
 	color: #fff
 	text-decoration: none
