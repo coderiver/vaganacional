@@ -7,7 +7,7 @@
 	.toparea__in
 		position: relative
 		z-index: 1 
-		height: 400px 
+		height: 178px 
 		@extend %in
 		+r(750)
 			height: auto
@@ -15,6 +15,9 @@
 			padding-bottom: 48px 
 			padding-top: 14px 
 			+clr
+	&.toparea_index
+		.toparea__in
+			height: 400px
 	&:before
 		background: $darkblue
 		content: ' '

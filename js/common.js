@@ -1,8 +1,7 @@
 head.ready(function() {
 
-	// $(document).on("click", function(){
-	// 	$(".js-popup").hide();
-	// });
+// slick
+
 	$('.js-slick').slick({
 		  centerMode: true,
 		  centerPadding: '20px',
@@ -30,5 +29,30 @@ head.ready(function() {
 		$('body').removeClass('is-sidebar');
 		return false;
 	});
+
+// tabs
+
+	function tab() {
+       $(".js-tab").each(function(){
+         var tab_link = $(this).find("a");
+         var tab_cont = $(this).parents(".js-tab-group").find(".js-tab-cont");
+         tab_cont.hide();
+         $(this).parents(".js-tab-group").find(".js-tab1").show();
+            tab_link.on("click", function() {
+             	var index = $(this).attr("href");
+             	tab_link.removeClass("is-active");
+             	tab_link.parent().removeClass("is-active");
+             	$(this).addClass("is-active");
+             	$(this).parent().addClass("is-active");
+             	tab_cont.hide();
+             	$(this).parents(".js-tab-group").find("."+index).show();
+                return false;
+            });
+        });
+    }
+    if ($(".js-tab-group").length) {
+    	tab();
+    };
+
 });
 
