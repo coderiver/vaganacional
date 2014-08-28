@@ -13,6 +13,7 @@
 <!-- begin topmenu  -->
 <div class="topmenu">
 	<div class="topmenu__in">
+		<a href="#" class="mob-logo"></a>
 		<ul>
 			<li><a href="#" class="is-active">Jobs</a></li>
 			<li><a href="#">Courses</a></li>
@@ -20,7 +21,15 @@
 		</ul>
 		<div class="topmenu__other">
 			<a href="#" class="topmenu__minhas"><i></i>Minhas Vagas</a>
-			<a href="#" class="topmenu__login js-login"><i></i>Login</a>
+			<div class="logged-user">
+				<div class="logged-user__img">
+					<img src="img/avatar.png" alt="">
+					<div class="incoming">8</div>
+				</div>
+				<div class="logged-user__name">
+					Ann Smith
+				</div>
+			</div>
 			<a href="#" class="topmenu__menutoggle js-menu"><i></i></a>
 		</div>
 	</div>
@@ -57,7 +66,7 @@
 			<div class="tabs__container">
 				<div class="account__topper">
 					<h2 class="h2 h2_red">Education</h2>
-					<button class="btn btn_red">add education</button>
+					<button class="btn btn_red btn_add">add education</button>
 				</div>
 				<div class="account__add">
 					<div class="clr">
@@ -76,11 +85,94 @@
 								<p>City</p>
 								<input type="text">
 							</div>
-							<div class="select-year"></div>
+							<div class="select-year">
+								<p>Period</p>
+								<div class="select-year__in">
+									<div class="select select_year js-select">
+										<div class="select__text js-select-text">Year</div>
+										<input type="hidden" class="js-select-input">
+										<ul class="select__dropdown js-select-list">
+											<li><a href="#">2011</a></li>
+											<li><a href="#">2012</a></li>
+											<li><a href="#">2013</a></li>
+											<li><a href="#">2014</a></li>
+										</ul>
+									</div>
+									<div class="select js-select">
+										<div class="select__text js-select-text">Month</div>
+										<input type="hidden" class="js-select-input">
+										<ul class="select__dropdown js-select-list">
+											<li><a href="#">January</a></li>
+											<li><a href="#">February</a></li>
+											<li><a href="#">March</a></li>
+											<li><a href="#">April</a></li>
+										</ul>
+									</div>
+									<span>to</span>
+									<div class="select select_year js-select">
+										<div class="select__text js-select-text">Year</div>
+										<input type="hidden" class="js-select-input">
+										<ul class="select__dropdown js-select-list">
+											<li><a href="#">2011</a></li>
+											<li><a href="#">2012</a></li>
+											<li><a href="#">2013</a></li>
+											<li><a href="#">2014</a></li>
+										</ul>
+									</div>
+									<div class="select js-select">
+										<div class="select__text js-select-text">Month</div>
+										<input type="hidden" class="js-select-input">
+										<ul class="select__dropdown js-select-list">
+											<li><a href="#">January</a></li>
+											<li><a href="#">February</a></li>
+											<li><a href="#">March</a></li>
+											<li><a href="#">April</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
 						</div>
+					</div>
+					<div class="textarea">
+						<p>Description</p>
+						<textarea></textarea>
+					</div>
+					<div class="account__bottom">
+						<button class="btn btn_gray">Cancel</button>
+						<button class="btn btn_green">save education</button>
 					</div>
 				</div>
 				<div class="divide"></div>
+				<div class="info-block">
+					<button class="edit">edit</button>
+					<button class="delete">delete</button>
+					<div class="info-block__topper">
+						<div class="info-block__title">Graphic Designer</div>
+						<div class="info-block__place">University of West London, London.</div>
+						<div class="info-block__years">Since Jan 2001 to Jan 2009</div>
+					</div>
+					<article>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+					</article>
+				</div>
+				<div class="info-block">
+					<button class="edit">edit</button>
+					<button class="delete">delete</button>
+					<div class="info-block__topper">
+						<div class="info-block__title">Project Management</div>
+						<div class="info-block__place">University of West London, London.</div>
+						<div class="info-block__years">Since Jan 2001 to Jan 2009</div>
+					</div>
+					<article>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+					</article>
+				</div>
+				<div class="divide"></div>
+				<div class="account__bottom">
+					<button class="btn btn_gray">Cancel</button>
+					<button class="btn btn_red btn_add">add education</button>
+					<button class="btn btn_red">Save & Continue</button>
+				</div>
 			</div>
 		</div>
 	</div>
