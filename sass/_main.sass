@@ -325,19 +325,33 @@
 	color: $green
 .checkbox
 	position: relative
-	font-size: 0
+	display: inline-block
 	padding-top: 10px
 	input
 		opacity: 0 
 	input + span
 		position: relative
+		padding-left: 15px
+		padding-top: 3px
+		+nosel
 		&:before
 			content: ""
 			position: absolute
+			left: -20px
+			top: 0
 			width: 20px
 			height: 20px
 			+box
-
+			border: 1px solid #ccc
+			border-radius: 4px
+			background: #FFF
+	input:checked + span
+		&:after
+			content: ""
+			position: absolute
+			top: 5px
+			left: -16px
+			+s(checkbox)		 
 .social-btn
 	position: relative
 	display: block
