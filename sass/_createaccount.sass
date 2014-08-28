@@ -78,10 +78,8 @@
             color: $darkblue
     &__container
         padding: 48px 0 80px
-        +r(750)
-            padding: 18px 0 80px
-        +r(480)
-            padding: 18px 0 32px      
+        +r(768)
+            padding: 18px 0 32px     
 .divide
     height: 1px
     background: #d5d5d5
@@ -242,7 +240,10 @@
             .select__text
                 width: 80px
                 &:before
-                    right: 10px             
+                    right: 10px
+    &.select_month
+        .select__text
+            width: 100px                             
 .textarea
     margin-bottom: 25px
     p
@@ -322,4 +323,22 @@
     &:before
         top: 11px
         left: 13px 
-        +s(delete)                
+        +s(delete)
+.birthday
+    margin-bottom: 25px
+    +r(470)
+        margin-bottom: 15px
+    & > p
+        font-size: 15px
+        color: $darkblue
+        margin-bottom: 5px
+    &__in
+        font-size: 0
+        margin-left: -14px
+        .select
+            display: inline-block
+            vertical-align: middle
+            margin-left: 14px
+            +r(470)
+                margin-bottom: 10px
+                                    

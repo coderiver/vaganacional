@@ -290,8 +290,7 @@ body { font-family: Tahoma, Arial, sans-serif; font-size: 12px; line-height: 1.4
 .tabs__link { display: block; height: 48px; line-height: 48px; text-align: center; border-radius: 4px 4px 0 0; background: #222e3a; color: white; text-decoration: none; font-size: 18px; font-family: "Source Sans Pro", Tahoma, sans-serif; font-weight: 400; }
 .tabs__link:hover { background: white; color: #222e3a; }
 .tabs__container { padding: 48px 0 80px; }
-@media only screen and (max-width: 750px) { .tabs__container { padding: 18px 0 80px; } }
-@media only screen and (max-width: 480px) { .tabs__container { padding: 18px 0 32px; } }
+@media only screen and (max-width: 768px) { .tabs__container { padding: 18px 0 32px; } }
 
 .divide { height: 1px; background: #d5d5d5; margin: 32px 0; }
 
@@ -350,6 +349,7 @@ body { font-family: Tahoma, Arial, sans-serif; font-size: 12px; line-height: 1.4
   .select.select_year .select__text:before { right: 5px; } }
 @media only screen and (max-width: 750px) { .select.select_year .select__text { width: 80px; }
   .select.select_year .select__text:before { right: 10px; } }
+.select.select_month .select__text { width: 100px; }
 
 .textarea { margin-bottom: 25px; }
 .textarea p { font-size: 15px; color: #222e3a; margin-bottom: 5px; }
@@ -370,3 +370,10 @@ body { font-family: Tahoma, Arial, sans-serif; font-size: 12px; line-height: 1.4
 .edit:before, .delete:before { content: ""; position: absolute; top: 9px; left: 13px; background: url('../img/icons-s453a19a02c.png') 0 -253px no-repeat; width: 14px; height: 18px; }
 
 .delete:before { top: 11px; left: 13px; background: url('../img/icons-s453a19a02c.png') 0 -232px no-repeat; width: 11px; height: 11px; }
+
+.birthday { margin-bottom: 25px; }
+@media only screen and (max-width: 470px) { .birthday { margin-bottom: 15px; } }
+.birthday > p { font-size: 15px; color: #222e3a; margin-bottom: 5px; }
+.birthday__in { font-size: 0; margin-left: -14px; }
+.birthday__in .select { display: inline-block; vertical-align: middle; margin-left: 14px; }
+@media only screen and (max-width: 470px) { .birthday__in .select { margin-bottom: 10px; } }
