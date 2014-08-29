@@ -411,6 +411,7 @@ body { font-family: Tahoma, Arial, sans-serif; font-size: 12px; line-height: 1.4
 .profile__personal ul { *zoom: 1; }
 .profile__personal ul:after { content: " "; display: table; clear: both; }
 .profile__personal ul li { float: left; width: 28%; color: #222e3a; }
+@media only screen and (max-width: 1024px) { .profile__personal ul li { width: 50%; } }
 .profile__personal-left { float: left; width: 70px; font: 15px Arial, Tahoma, sans-serif; }
 .profile__personal-left span { display: inline-block; vertical-align: middle; }
 .profile__personal-right { overflow: hidden; font: bold 15px Arial, Tahoma, sans-serif; }
