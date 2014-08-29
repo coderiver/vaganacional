@@ -91,5 +91,15 @@ head.ready(function() {
         event.stopPropagation();
     });    
 
+// personal
+
+	if ($('.js-personal').length) {
+		$('.js-personal-block').hide();
+		$('.js-personal-btn').on('click', function(){
+			$(this).toggleClass('is-open');
+			$(this).next('.js-personal-block').toggle('fast');
+		});
+	};    
+
 });
 
