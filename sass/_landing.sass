@@ -1,0 +1,53 @@
+// styles for landing page
+.landing
+    position: relative
+    height: 768px 
+    background: url(../img/landing.jpg) no-repeat 50% 0
+    background-size: cover
+    &__in
+        @extend %in
+    &__topper
+        padding-top: 16px
+        +clr
+        margin-bottom: 70px
+        .btn
+            float: right
+            margin-left: 32px
+            height: 32px
+            padding: 0 20px 
+            +opensans-sb
+            font-size: 15px
+    &__links
+        float: right
+        +clr
+        padding-top: 6px
+        li
+            float: left
+            margin-left: 22px
+            a
+                text-transform: uppercase
+                text-decoration: none
+                font-size: 15px
+                +opensans-sb
+                color: $green
+    &__content
+        width: 530px
+        margin-left: 25px
+    &__logo
+        position: relative
+        margin-bottom: 10px
+        a
+            +hide-text
+            +s(logo-landing)
+            display: inline-block
+    &__title
+        margin-bottom: 10px
+        font-size: 54px
+        color: #f66252
+        text-transform: uppercase
+        +source-sb
+        line-height: 1
+    &__about
+        font-size: 21px
+        color: #fff                              
+            

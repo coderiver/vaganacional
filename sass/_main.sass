@@ -437,7 +437,25 @@
 		border: 1px solid #cdced0
 		border-radius: 50%
 		font: 14px Arial, sans-serif
-		color: $darkblue   
+		color: $darkblue
+.rotate-btn
+	position: fixed
+	top: 50%
+	right: -61px
+	width: 176px
+	height: 52px
+	margin-top: -80px
+	border-radius: 4px 4px 0 0
+	background: $darkblue 
+	text-align: center
+	font-size: 22px
+	color: #fff
+	+rotate(-90)
+	+source-sb
+	text-transform: uppercase
+	z-index: 99
+	+r(1100)
+		display: none  		   
 
 
 
