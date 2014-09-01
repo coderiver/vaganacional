@@ -4,6 +4,8 @@
     height: 768px 
     background: url(../img/landing.jpg) no-repeat 50% 0
     background-size: cover
+    +r(750)
+        height: auto 
     &__in
         @extend %in
     &__topper
@@ -17,6 +19,9 @@
             padding: 0 20px 
             +opensans-sb
             font-size: 15px
+            +r(480)
+                font-size: 13px
+                margin-left: 10px
     &__links
         float: right
         +clr
@@ -24,15 +29,26 @@
         li
             float: left
             margin-left: 22px
+            &:first-child
+                margin-left: 0
             a
                 text-transform: uppercase
                 text-decoration: none
                 font-size: 15px
                 +opensans-sb
                 color: $green
+                span
+                    +r(600)
+                        display: none
+            +r(480)
+                margin-left: 10px
+                a
+                    font-size: 13px
     &__content
-        width: 530px
+        max-width: 530px
         margin-left: 25px
+        +r(768)
+            margin-left: 0
     &__logo
         position: relative
         margin-bottom: 10px
@@ -40,6 +56,11 @@
             +hide-text
             +s(logo-landing)
             display: inline-block
+        +r(750)
+            text-align: center
+            margin-bottom: 36px
+            a
+                +s(logo-landing-s)
     &__title
         margin-bottom: 10px
         font-size: 54px
@@ -47,7 +68,113 @@
         text-transform: uppercase
         +source-sb
         line-height: 1
+        +r(750)
+            margin-bottom: 20px
+        +r(480)
+            font-size: 33px
     &__about
+        margin-bottom: 10px
         font-size: 21px
-        color: #fff                              
-            
+        color: #fff
+        +source
+        font-weight: bold
+        font-style: italic
+        +r(750)
+            margin-bottom: 15px
+        +r(480) 
+            font-size: 18px
+            line-height: 1.1
+                                      
+// landing form
+.l-form
+    padding-bottom: 120px
+    +r(750)
+        padding-bottom: 60px
+    +r(480)
+        padding-bottom: 32px
+    &__submit
+        margin-top: 10px
+        width: 100%
+        height: 49px
+        border-radius: 4px
+        text-align: center
+        +source-sb
+        text-transform: uppercase
+        color: #fff
+        font-size: 22px
+        background: #f4503e   
+.l-row
+    +clr
+    margin-bottom: 20px
+.l-col-left
+    float: left
+    width: 48.5%
+    +r(480)
+        width: 100% 
+.l-col-right
+    float: right
+    width: 48.5%
+    +r(480)
+        width: 100%                          
+.landing-input
+    p
+        margin-bottom: 10px
+        font: 16px Tahoma, sans-serif
+        color: #fff
+    input
+        width: 100%
+        height: 40px
+        border: 1px solid #747779
+        border-radius: 6px
+        +box
+        font: 16px Tahoma, sans-serif
+        color: #fff
+        padding: 0 10px 
+        background: rgba(#3b4347, .38)
+        +placeholder
+            font-style: italic
+            color: #fff
+.empl_landing
+    .empl__in
+        padding: 66px 0 42px 0
+        
+.about
+    position: relative
+    padding: 80px 0 120px
+    +r(750)
+        display: none
+    &__in
+        @extend %in
+        +justify
+    &__item
+        +justify-child
+        width: 31%
+    &__img
+        width: 222px
+        height: 222px
+        margin: 0 auto 25px 
+        border-radius: 50%
+        overflow: hidden
+        img
+            width: 100%
+            height: 100%
+    &__title
+        font-size: 24px
+        +source-sb
+        color: $darkblue
+        text-align: center
+        margin-bottom: 10px
+        +r(768)
+            font-size: 21px
+    &__text
+        font: 16px Tahoma, sans-serif
+        text-align: center
+        color: #868b91
+        margin-bottom: 20px
+    &__btn
+        text-align: center
+        .btn
+            width: 204px
+            +opensans-sb
+            font-size: 15px
+            padding: 0             

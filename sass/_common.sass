@@ -54,7 +54,7 @@
 	font-weight: 400
 =source-sb
 	font-family: 'Source Sans Pro', Tahoma,  sans-serif
-	font-weight: 600 	
+	font-weight: 600	 	
 =source-l
 	font-family: 'Source Sans Pro', Tahoma,  sans-serif
 	font-weight: 300
@@ -102,6 +102,26 @@ $yellow: #fdbe37
 		top: -1px 
 .upload
 	@extend %upload
+	
+=justify
+	text-align: justify
+	line-height: 0
+	font-size: 1px
+	text-justify: newspaper
+	zoom: 1
+	text-align-last: justify
+	&:after
+		content: ""
+		display: inline-block
+		width: 100%
+		height: 0px
+		visibility: hidden
+		overflow: hidden
+=justify-child
+	display: inline-block
+	line-height: normal
+	vertical-align: top
+	font-size: 15px	
 
 
 

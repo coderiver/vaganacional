@@ -155,7 +155,7 @@
 		line-height: 47px 
 		margin-bottom: 15px 
 		+r(700)
-			display: inline-block
+			display: inline-block	
 	.footer__top
 		background: #2B3641 
 		+clr
@@ -216,7 +216,8 @@
 			margin: 0 5px 
 	.footer__section
 		float: left
-		width: 25% 
+		width: 25%
+		  
 		+r(880)
 			width: auto
 			margin-right: 18px 
@@ -240,7 +241,34 @@
 					display: inline-block
 					vertical-align: top
 					margin-right: 10px 
-					padding-top: 8px 
+					padding-top: 8px
+	&.footer_landing
+		.footer__section
+			+clr
+			width: auto
+			margin-right: 14px
+			h3
+				float: left
+				margin-top: 7px
+				margin-bottom: 0
+				+r(880)
+					margin-top: 0
+			.socials
+				float: left
+				margin-left: 18px
+				margin-bottom: 0
+			+r(600)
+				&.is-last
+					width: 100%
+					margin-bottom: 15px 	
+			+r(480)
+				margin-right: 0
+				h3
+					font-size: 12px
+					margin-right: 5px 	 	
+		.footer__upload
+			+r(700)
+				display: none							 
 	.footer__bottom
 		background: #222E39 
 		height: 60px 
