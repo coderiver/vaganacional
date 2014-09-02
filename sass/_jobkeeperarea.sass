@@ -1,0 +1,129 @@
+// styles for jobkeeperarea page
+.logo-inner
+    float: left
+    padding-top: 14px
+    margin-right: 50px 
+    a
+        display: block
+        +s(logo-green)
+.submenu
+    background: #f0eeef
+    ul
+        @extend %in
+        float: none
+        height: 40px
+        +clr
+        li
+            float: left
+            margin-right: 36px
+            a
+                font-size: 17px
+                line-height: 40px
+                +source-sb
+                color: $darkblue
+                text-transform: none 
+                text-decoration: none
+                &:hover
+                    color: $green
+                &.is-active
+                    color: $green
+.toparea_inner
+    background: #3c434c
+    padding: 28px 0
+    &:before
+        display: none
+    .toparea__in
+        height: auto                                 
+.form_inner
+    position: static
+    background: $darkblue
+    .form__top
+        background: $darkblue
+    +r(750)
+        background: transparent
+        .form__top
+            background: transparent
+.wrap
+    @extend %in
+    +clr
+    padding: 42px 0 
+.content
+    float: left
+    width: 641px
+.sidebar
+    float: right
+    width: 304px
+.s-profile
+    border-radius: 5px
+    background: #f0eeef 
+    &__topper
+        padding: 26px
+        border-radius: 5px 5px 0 0
+        border-bottom: 2px solid #fff
+        .btn
+            width: 100%
+            height: 40px  
+    &__preview
+        +clr
+        margin-bottom: 18px
+    &__img
+        float: left
+        width: 95px
+        height: 95px
+        margin-right: 16px
+        overflow: hidden
+        font-size: 0
+        border-radius: 4px
+        img
+            width: 100%
+            height: 100%
+    &__info
+        float: left
+        padding-top: 10px
+    &__name
+        +source-sb
+        color: $darkblue
+        font-size: 19px
+    &__workplace
+        font: 14px Tahoma, sans-serif
+        color: $red                  
+    &__place
+        font: 14px Tahoma, sans-serif
+        color: #8a8d91
+    &__complete
+        +clr
+        padding: 26px
+        border-radius: 0 0 5px 5px
+.complete
+    +clr
+    margin-bottom: 25px      
+    &__graph
+        float: left
+        margin-right: 16px
+    &__text
+        float: left
+        padding-top: 25px
+        font: 16px Tahoma, sans-serif
+        color: $darkblue
+.tip
+    font: 14px Tahoma, sans-serif
+    color: #444242
+    & > p
+        margin-bottom: 28px
+    &__list
+        li
+            +clr
+            position: relative
+            padding-left: 15px
+            &:before
+                content: ""
+                position: absolute
+                top: 6px
+                left: 0px
+                +s(tip)
+                
+    &__name
+        float: left
+    &__state
+        float: right            
+                  
