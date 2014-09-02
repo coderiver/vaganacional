@@ -124,10 +124,15 @@
         padding: 40px 32px 
         border-radius: 4px
         background: #f0efef
+        .skills__add
+            & > p
+                font-size: 15px
         .input
             margin-bottom: 25px
         +r(600)
-            padding: 25px          
+            padding: 25px
+        +r(480)
+            padding: 10px              
     &__left
         float: left
         width: 48.5%
@@ -543,7 +548,19 @@
                 color: #84878b
             input:checked + span
                 background: $green
-                color: #fff         
+                color: #fff
+        +r(750)
+            display: none
+    &__point
+        float: right
+        width: 31px
+        height: 31px
+        margin-left: 8px
+        border-radius: 4px
+        background: $green
+        color: #fff
+        text-align: center
+        font: 15px/31px Arial, sans-serif                           
     &__name
         overflow: hidden
         input
@@ -554,6 +571,106 @@
             +box
             font-size: 15px
             padding: 0 10px
+    &__new
+        margin-bottom: 12px
+        +clr
+        .input
+            overflow: hidden
+            margin-bottom: 0
+            input
+                height: 35px
+                +placeholder
+                    font-style: italic   
+    &__new-btn
+        position: relative
+        float: left 
+        width: 37px
+        height: 35px
+        margin-right: 5px
+        border-radius: 4px
+        background: $green
+        &:before
+            content: ""
+            position: absolute
+            top: 9px
+            left: 10px
+            +s(add)
+    &__empty
+        float: right
+        width: 439px
+        height: 38px
+        margin-left: 8px
+        +r(750)
+            width: 31px
+    &__import
+        margin-bottom: 12px
+        +clr
+        .social-btn
+            display: block
+            padding-right: 15px
+            span
+                font-style: italic
+                font-size: 14px
+            +r(568)
+                span
+                    display: none
+            +r(480)
+                padding-right: 10px
+                padding-left: 10px    
+                &:before
+                    left: 34px
+                i
+                    margin-right: 4px                     
+    &__import-btn
+        background: #0274b3
+        position: relative
+        float: left 
+        width: 37px
+        height: 35px
+        margin-right: 5px
+        border-radius: 4px
+        &:before
+            content: ""
+            position: absolute
+            top: 9px
+            left: 10px
+            +s(add)
+    &__import-wrap
+        float: left
+        width: 413px
+        +r(568)
+            width: auto
+    &__tags
+        padding-top: 32px
+        & > p
+            font-size: 15px
+            margin-bottom: 10px
+        ul
+            font-size: 0
+            margin-left: -10px
+            li
+                display: inline-block
+                vertical-align: middle
+                margin-left: 10px
+                margin-bottom: 10px
+                a
+                    position: relative
+                    display: inline-block
+                    height: 35px
+                    line-height: 35px
+                    padding: 0 25px 0 35px 
+                    font-size: 17px
+                    text-decoration: none
+                    color: $green
+                    +source-sb
+                    border-radius: 4px
+                    background: #fff
+                    &:before
+                        content: ""
+                        position: absolute
+                        top: 13px
+                        left: 15px
+                        +s(plus)                   
 .toparea_acc
     +r(750)
         display: none
@@ -676,3 +793,49 @@
             span                                       
                 margin-left: 9px
                 margin-right: 4px     
+.position
+    margin-bottom: 32px
+    & > p
+        font-size: 15px
+    &__left
+        float: left
+        width: 150px
+    &__right
+        float: left     
+    .checkbox
+        display: block
+        input + span
+            font-size: 15px
+            padding-top: 0
+.workplace
+    margin-bottom: 32px
+    & > p
+        font-size: 15px
+        margin-bottom: 10px
+    input[type="text"]
+        vertical-align: middle
+        width: 336px
+        margin-right: 10px
+        height: 37px
+        border-radius: 4px
+        background: #fff
+        +box
+        padding: 0 10px
+        +source
+        +r(1023)
+            width: 214px
+        +r(480)
+            width: 184px    
+    .btn
+        vertical-align: middle
+        height: 38px
+        padding: 0 18px 0 38px
+        &.btn_add
+            &:before
+                top: 11px
+                left: 12px
+    .checkbox
+        display: block
+        input + span
+            padding-top: 0
+            font-size: 15px                                                     
