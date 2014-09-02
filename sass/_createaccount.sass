@@ -120,7 +120,7 @@
             float: left
         .btn
             float: right
-    &__add
+    &__add, .edit-block
         padding: 40px 32px 
         border-radius: 4px
         background: #f0efef
@@ -287,6 +287,8 @@
     article
         p
             margin-bottom: 6px
+    +r(900)
+        padding: 22px        
     +r(480)
         padding: 66px 25px 43px 
     &__topper
@@ -559,7 +561,7 @@
     +r(750)
         padding: 0
         .tabs__container
-            padding: 0 0 32px  
+            padding: 0 0 0px  
         .profile__header
             padding: 0 15px
         .profile__header
@@ -601,8 +603,10 @@
             color: #c6c6c6                                              
 .m-info-block-wrap
     display: none
-    padding: 22px 40px 66px
-    background: #f0efef   
+    padding: 0px 40px 32px
+    background: #f0efef
+    &.is-first
+        padding-top: 32px   
     +r(750)
         display: block            
 .m-info-block
@@ -615,8 +619,13 @@
         border-radius: 4px 4px 0 0  
         .h3
             float: left
+            +r(470)
+                float: none
+                margin-bottom: 5px
         .btn
             float: right
+            +r(470)
+                float: none
     &__list
         margin-top: 1px        
     &__item
@@ -644,4 +653,26 @@
     &__time
         font: bold 14px Arial, sans-serif
         color: #8d939a
-                                               
+        text-transform: uppercase
+    &__skills
+        font-size: 17px
+        +source-sb
+        color: $green
+        span
+            color: $darkblue    
+.edit-block
+    background: #e4e4e4!important
+    padding: 32px 25px 25px!important 
+    margin-bottom: -32px
+    .select-year__in
+        span                                       
+            margin-left: 23px
+            margin-right: 10px
+    +r(1024)
+        padding: 32px 15px 25px!important
+        .account__right
+            width: 50%
+        .select-year__in
+            span                                       
+                margin-left: 9px
+                margin-right: 4px     

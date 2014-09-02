@@ -143,16 +143,80 @@
 								</article>
 							</li>
 							<li>
-								<button class="edit">edit</button>
-								<button class="delete">delete</button>
-								<div class="info-block__topper">
-									<div class="info-block__title">Sales Executive</div>
-									<div class="info-block__place">IBM, Dublin.</div>
-									<div class="info-block__years">Since Jan 2012 to present.</div>
+								<div class="edit-block">
+									<div class="clr">
+										<div class="account__left">
+											<div class="input">
+												<p>Institution</p>
+												<input type="text">
+											</div>
+											<div class="input">
+												<p>Name Degree</p>
+												<input type="text">
+											</div>
+										</div>
+										<div class="account__right">
+											<div class="input">
+												<p>City</p>
+												<input type="text">
+											</div>
+											<div class="select-year">
+												<p>Period</p>
+												<div class="select-year__in">
+													<div class="select select_year js-select">
+														<div class="select__text js-select-text">Year</div>
+														<input type="hidden" class="js-select-input">
+														<ul class="select__dropdown js-select-list">
+															<li><a href="#">2011</a></li>
+															<li><a href="#">2012</a></li>
+															<li><a href="#">2013</a></li>
+															<li><a href="#">2014</a></li>
+														</ul>
+													</div>
+													<div class="select js-select">
+														<div class="select__text js-select-text">Month</div>
+														<input type="hidden" class="js-select-input">
+														<ul class="select__dropdown js-select-list">
+															<li><a href="#">January</a></li>
+															<li><a href="#">February</a></li>
+															<li><a href="#">March</a></li>
+															<li><a href="#">April</a></li>
+														</ul>
+													</div>
+													<span>to</span>
+													<div class="select select_year js-select">
+														<div class="select__text js-select-text">Year</div>
+														<input type="hidden" class="js-select-input">
+														<ul class="select__dropdown js-select-list">
+															<li><a href="#">2011</a></li>
+															<li><a href="#">2012</a></li>
+															<li><a href="#">2013</a></li>
+															<li><a href="#">2014</a></li>
+														</ul>
+													</div>
+													<div class="select js-select">
+														<div class="select__text js-select-text">Month</div>
+														<input type="hidden" class="js-select-input">
+														<ul class="select__dropdown js-select-list">
+															<li><a href="#">January</a></li>
+															<li><a href="#">February</a></li>
+															<li><a href="#">March</a></li>
+															<li><a href="#">April</a></li>
+														</ul>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="textarea">
+										<p>Description</p>
+										<textarea></textarea>
+									</div>
+									<div class="account__bottom">
+										<button class="btn btn_gray">Cancel</button>
+										<button class="btn btn_red btn_edit">done editing</button>
+									</div>
 								</div>
-								<article>
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-								</article>
 							</li>
 						</ul>
 					</div>
@@ -400,7 +464,7 @@
 						<button class="btn btn_red btn_edit">edit</button>
 						<button class="btn btn_red">Save &amp; Continue</button>
 					</div>
-					<div class="m-info-block-wrap">
+					<div class="m-info-block-wrap is-first">
 						<div class="m-info-block">
 							<div class="m-info-block__title">
 								<h3 class="h3">Education</h3>
@@ -419,6 +483,47 @@
 										<div class="m-info-block__job">Sales Executive</div>
 										<div class="m-info-block__company">IBM, Dublin.</div>
 										<div class="m-info-block__time">Since Jan 2012 to present.</div>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="m-info-block-wrap">
+						<div class="m-info-block">
+							<div class="m-info-block__title">
+								<h3 class="h3">Experience</h3>
+								<button class="btn btn_green">add Experience</button>
+							</div>
+							<ul class="m-info-block__list">
+								<li class="m-info-block__item">
+									<a href="#">
+										<div class="m-info-block__job">Sales Executive</div>
+										<div class="m-info-block__company">IBM, Dublin.</div>
+										<div class="m-info-block__time">Since Jan 2012 to present.</div>
+									</a>
+								</li>
+								<li class="m-info-block__item">
+									<a href="#">
+										<div class="m-info-block__job">Sales Executive</div>
+										<div class="m-info-block__company">IBM, Dublin.</div>
+										<div class="m-info-block__time">Since Jan 2012 to present.</div>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="m-info-block-wrap">
+						<div class="m-info-block">
+							<div class="m-info-block__title">
+								<h3 class="h3">Skills</h3>
+								<button class="btn btn_green">add Skills</button>
+							</div>
+							<ul class="m-info-block__list">
+								<li class="m-info-block__item">
+									<a href="#">
+										<div class="m-info-block__skills"><span>Preferred Position: </span>Full time</div>
+										<div class="m-info-block__skills"><span>Place to work: </span>Bs As, Argentina.</div>
+										<div class="m-info-block__skills"><span>Skills: </span>User Interface (5), User Experience (7), SEO (4), HTML (9)</div>
 									</a>
 								</li>
 							</ul>
