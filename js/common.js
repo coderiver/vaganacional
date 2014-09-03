@@ -21,6 +21,17 @@ head.ready(function() {
 		    }
 		  ]
 		});
+	$('.js-slick2').slick({
+		  slidesToShow: 4,
+		  responsive: [
+		    {
+		      breakpoint: 880,
+		      settings: {
+		        slidesToShow: 3
+		      }
+		    }
+		  ]
+		});
 	$('.js-menu').click(function(event) {
 		$('body').addClass('is-sidebar');
 		return false;

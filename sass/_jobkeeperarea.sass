@@ -43,17 +43,22 @@
         background: transparent
         .form__top
             background: transparent
-.wrap
+.wrapper
     @extend %in
     +clr
-    padding: 42px 0 
+    padding: 42px 0
 .content
     float: left
-    width: 641px
+    width: 70%
+    +r(760)
+        width: 100% 
 .sidebar
     float: right
-    width: 304px
+    width: 28%
+    +r(760)
+        width: 100% 
 .s-profile
+    margin-bottom: 32px
     border-radius: 5px
     background: #f0eeef 
     &__topper
@@ -62,15 +67,21 @@
         border-bottom: 2px solid #fff
         .btn
             width: 100%
-            height: 40px  
+            height: 40px
+            padding: 0
+        +r(1024)
+            padding: 13px
+        +r(900)     
+            .btn
+                font-size: 15px   
     &__preview
         +clr
-        margin-bottom: 18px
+        margin-bottom: 18px 
     &__img
         float: left
         width: 95px
         height: 95px
-        margin-right: 16px
+        margin-right: 12px
         overflow: hidden
         font-size: 0
         border-radius: 4px
@@ -78,12 +89,12 @@
             width: 100%
             height: 100%
     &__info
-        float: left
         padding-top: 10px
     &__name
         +source-sb
         color: $darkblue
         font-size: 19px
+        line-height: 1
     &__workplace
         font: 14px Tahoma, sans-serif
         color: $red                  
@@ -94,6 +105,8 @@
         +clr
         padding: 26px
         border-radius: 0 0 5px 5px
+        +r(1024)
+            padding: 13px 
 .complete
     +clr
     margin-bottom: 25px      
@@ -108,6 +121,8 @@
 .tip
     font: 14px Tahoma, sans-serif
     color: #444242
+    +r(450)
+        display: none
     & > p
         margin-bottom: 28px
     &__list
@@ -115,15 +130,208 @@
             +clr
             position: relative
             padding-left: 15px
+            margin-bottom: 10px
             &:before
                 content: ""
                 position: absolute
                 top: 6px
                 left: 0px
                 +s(tip)
-                
+            &.is-complete
+                .tip__name
+                    color: $red
+                .tip__state
+                    margin-right: 5px
+                    font-size: 0
+                    +s(ok)
+            +r(960)
+                font-size: 13px               
     &__name
-        float: left
+        overflow: hidden
     &__state
-        float: right            
+        float: right
+.courses 
+    border-radius: 5px
+    background: #f0eeef
+    padding: 26px
+    &__title
+        text-transform: uppercase
+        +source-sb
+        color: $red
+        font-size: 19px
+        margin-bottom: 25px
+    &__list
+        li
+            font-size: 0
+            margin-bottom: 15px
+            a
+                text-decoration: none
+                color: #43484c
+            i, span
+                display: inline-block
+                vertical-align: middle
+                font: 14px Tahoma, sans-serif
+            i
+                margin-right: 10px     
+.bussiness-ico
+    +s(bussiness)
+.media-ico
+    +s(media)
+.finance-ico
+    +s(finance)
+.title
+    +clr
+    margin-bottom: 10px
+    padding-bottom: 10px
+    border-bottom: 1px solid #c1c1c1
+    .h4
+        float: left
+    &__right
+        float: right
+.views
+    &__period
+        padding-top: 8px
+        font-size: 15px
+        +source-sb
+        color: #c0c3c7
+        text-transform: uppercase
+.stats
+    margin-bottom: 100px
+    &__nav
+        +clr
+        padding-bottom: 15px
+        border-bottom: 1px solid #c1c1c1
+        margin-bottom: 28px
+        li
+            float: left
+            width: 25%
+            +box
+            border-left: 1px dotted #c1c1c1
+            &:first-child
+                border-left: none  
+            a
+                display: block
+                +box
+                padding: 0 6% 
+                text-align: center
+                text-decoration: none
+                color: #c0c3c7
+                font-size: 12px
+                +source-sb
+                text-transform: uppercase
+                p
+                    font-size: 35px
+                    line-height: 1
+                &.is-active
+                    color: $green
+    &__graph
+        img
+            max-width: 100%                
+.jobs
+    &__sort
+        font-size: 0
+        li
+            display: inline-block
+            vertical-align: middle
+            margin: 0 6px  
+            a
+                display: inline-block
+                &.globus
+                    +s(globus)
+                    &:hover
+                        +s(globus-green)
+                    &.is-active
+                        +s(globus-green)   
+                &.fs
+                    +s(fs)
+                    &:hover
+                        +s(fs-green)
+                    &.is-active
+                        +s(fs-green)    
+                &.cpn
+                    +s(cpn)
+                    &:hover
+                        +s(cpn-green)
+                    &.is-active
+                        +s(cpn-green)
+    &__list
+        margin-top: 32px
+        & > li
+            +clr
+            margin-bottom: 40px
+    &__img
+        float: left
+        width: 142px
+        height: 114px
+        line-height: 114px
+        margin-right: 15px
+        border: 2px solid #f0efef
+        text-align: center
+        vertical-align: middle
+        img
+            display: inline-block
+            vertical-align: middle
+            max-width: 100%
+            max-height: 100%
+    &__content
+        overflow: hidden
+    &__info
+        overflow: hidden
+        font: Arial, sans-serif
+        font-size: 15px
+    &__tools
+        float: right
+        width: 112px
+        margin-left: 15px
+        padding-top: 50px
+        .btn
+            width: 100%
+            +box
+            height: 38px
+            margin-bottom: 10px 
+            text-align: center
+            line-height: 38px 
+            text-decoration: none
+            font-size: 16px
+            padding: 0 5px
+        ul
+            font-size: 0
+            text-align: center
+            li
+                display: inline-block
+                vertical-align: middle
+                margin: 0 6px 
+                a
+                    display: inline-block
+                    &.jobs__like
+                        +s(heart)
+                    &.jobs__letter
+                        +s(letter)
+                    &.jobs__add
+                        +s(plus2)
+    &__name
+        +source-sb
+        color: $green
+        font-size: 21px
+    &__company
+        font-weight: bold
+    &__date
+        text-transform: uppercase
+        font-size: 13px
+        color: #8d939a
+    &__descr
+        color: $darkblue
+    &__more
+        margin-bottom: 50px
+        border-top: 1px solid #c1c1c1 
+        padding-top: 15px 
+        text-align: center
+        a
+            font: 12px Tahoma, sans-serif
+            text-transform: uppercase
+            color: #8e9399
+                    
+
+
+                    
                   
