@@ -43,28 +43,23 @@ head.ready(function() {
 
 // tabs
 
-	//function tab() {
-    //   $(".js-tab").each(function(){
-    //     var tab_link = $(this).find("a");
-    //     var tab_cont = $(this).parents(".js-tab-group").find(".js-tab-cont");
-    //     tab_cont.hide();
-    //     $(this).parents(".js-tab-group").find(".js-tab1").show();
-    //        tab_link.on("click", function() {
-    //         	var index = $(this).attr("href");
-    //         	tab_link.removeClass("is-active");
-    //         	tab_link.parent().removeClass("is-active");
-    //         	$(this).addClass("is-active");
-    //         	$(this).parent().addClass("is-active");
-    //         	tab_cont.hide();
-    //         	$(this).parents(".js-tab-group").find("."+index).show();
-    //            return false;
-    //        });
-    //    });
-    //}
-    //if ($(".js-tab-group").length) {
-    //	tab();
-    //};
     $('#demoTab').easyResponsiveTabs();
+
+// filters
+
+	function filters(){
+		var btn = $('.js-filter-btn');
+		//$('.js-filter-item').hide();
+
+		btn.on('click', function(){
+			$(this).parent().find('.js-filter-item').slideToggle();
+		});
+
+	}
+	if ($('.m-filters').length) {
+		filters();
+	};
+
 // select
     function select() {
         $(".js-select").each(function(){

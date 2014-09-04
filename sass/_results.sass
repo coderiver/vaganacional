@@ -1,0 +1,300 @@
+// styles for results page
+.results
+    clear: both
+    padding-top: 45px
+    &__count
+        font: 14px Tahoma, sans-serif
+        color: #606871
+        +r(600)
+            padding: 0 15px
+    &.results_mod
+        +r(600)
+            padding-top: 0          
+.post
+    display: inline-block
+    position: relative
+    padding-left: 42px 
+    +source-sb
+    text-transform: uppercase
+    font-size: 19px
+    color: $red
+    text-decoration: none
+    &:before
+        content: ""
+        position: absolute
+        top: 0
+        left: 0
+        +s(cloud)
+    +r(760)
+        display: none    
+.filters
+    padding-bottom: 15px
+    border-bottom: 1px solid #dfe0e3
+    margin-bottom: 15px
+    +r(600)
+        background: #e9ebec
+        padding-top: 8px  
+    &__list
+        background: #f0eeef
+        border-radius: 4px
+        height: 30px
+        padding: 12px
+        +justify
+        font-size: 0
+        +r(760)
+            display: none
+        li
+            +justify-child
+            a
+                display: block
+                width: 132px
+                height: 29px
+                border-radius: 4px
+                background: #e2dfe0 
+                line-height: 29px
+                text-align: center
+                +source
+                text-decoration: none
+                color: #515a64
+                font-size: 15px
+                &.filters__all
+                    width: 48px
+                    text-transform: uppercase
+                &.filters__delete
+                    width: 30px
+                    i
+                        display: inline-block
+                        +s(delete-gray)
+                &.is-active
+                    background: #f4503e
+                    color: #fff
+                +r(1024)
+                    width: 100px
+.m-filters
+    display: none
+    padding: 10px 42px 42px
+    background: #e9ebec   
+    +r(760)
+        display: block
+    +r(480)
+        padding: 10px 25px 42px     
+    &__btn
+        width: 100%
+        height: 37px
+        text-align: center
+        +source
+        font-size: 19px
+        color: $darkblue
+        border-radius: 4px
+        text-transform: uppercase
+    &__list
+        padding-bottom: 20px    
+    &__item
+        margin-top: 10px
+        border-radius: 4px
+        background: #fbfcfc
+        overflow: hidden
+    &__title
+        position: relative
+        padding: 0 25px 0 19px
+        +source
+        line-height: 37px
+        font-size: 19px
+        color: #515a64
+        cursor: pointer
+        &:before
+            content: ""
+            position: absolute
+            top: 19px
+            right: 11px
+            +s(arr-down)
+    &__block
+        position: relative
+        padding: 10px 25px 25px
+        +r(480)
+            padding: 10px 17px 20px 
+    &__more
+        position: absolute
+        bottom: 15px
+        right: 20px
+        font: 13px Tahoma, sans-serif
+        color: #3f4750
+        &:hover
+            text-decoration: none    
+    &__options
+        +clr
+        li
+            position: relative
+            float: left
+            margin-right: 8px
+            margin-bottom: 8px
+            padding: 0 13px 0 30px
+            height: 37px
+            line-height: 37px  
+            background: #e9ebec
+            font-size: 15px
+            +source-sb
+            color: #515a64
+            border-radius: 4px
+            cursor: pointer
+            span
+                +source
+                font-size: 13px 
+            &:before
+                content: "+"
+                position: absolute
+                top: 0
+                left: 11px
+                font-size: 15px
+            &.is-active
+                background: #515a64
+                color: #fff
+                &:before
+                    content: "-"
+                    left: 12px                 
+.subscribe
+    border-radius: 4px
+    background: #f0eeef
+    padding: 20px 20px 30px
+    margin-bottom: 18px
+    +r(1024)
+        padding: 15px 15px 20px 
+    &__title
+        +source-sb
+        font-size: 16px
+        color: $red
+        margin-bottom: 10px
+    &__form
+        font-size: 0
+        input, button
+            display: inline-block
+            vertical-align: middle
+            height: 37px
+            border-radius: 4px
+            +box 
+        input
+            width: 75%
+            padding: 0 10px 
+        button
+            width: 25%
+            text-align: center
+            background: $red
+            color: #fff
+            text-transform: uppercase
+            +source-sb
+            font-size: 17px                                                     
+.ads
+    border-radius: 4px
+    background: #f0eeef
+    padding: 20px 20px 30px
+    margin-bottom: 18px
+    +r(1024)
+        padding: 15px 15px 20px            
+    &__title
+        +source-sb
+        font-size: 19px
+        text-transform: uppercase
+        color: #515a64
+        margin-bottom: 20px
+    &__item
+        margin-bottom: 20px
+        font: 13px Tahoma, sans-serif
+        color: #515a64
+        a
+            text-decoration: none
+            color: $red
+            &:hover
+                text-decoration: underline
+.pag
+    clear: both
+    border-top: 1px solid #dfe0e3
+    padding-top: 26px
+    margin-bottom: 74px
+    +r(750)
+        display: none
+    &__in
+        border-radius: 4px
+        background: #f0efef
+        padding: 8px
+        +clr
+    &__subscribe
+        float: left
+        font-size: 0
+        input, button
+            display: inline-block
+            vertical-align: middle
+            height: 37px
+            border-radius: 4px
+            +box 
+        input
+            width: 75%
+            padding: 0 10px
+        button
+            width: 25%
+            text-align: center
+            background: $red
+            color: #fff
+            text-transform: uppercase
+            +source-sb
+            font-size: 17px
+    &__pager
+        float: right
+        font-size: 0
+        span
+            display: inline-block
+            vertical-align: middle
+            font: 15px Tahoma, sans-serif
+            color: #606871
+            +r(850)
+                font: 13px Tahoma, sans-serif
+    &__nav
+        display: inline-block
+        vertical-align: middle
+        font-size: 0
+        margin: 0 20px 
+        a, ul, li
+            display: inline-block
+            vertical-align: middle
+        ul
+            font-size: 0
+            margin: 0 22px 
+            a
+                width: 32px
+                height: 32px
+                text-align: center
+                line-height: 32px
+                border-radius: 4px
+                color: #7b8289
+                font-size: 15px 
+                text-decoration: none
+                &.is-active, &:hover
+                    background: $red
+                    color: #fff 
+    &__prev
+        +s(arr-left-gray)
+    &__next
+        +s(arr-right-gray)   
+    &__gopage
+        display: inline-block
+        vertical-align: middle
+        font-size: 0
+        input, span
+            display: inline-block
+            vertical-align: middle
+        span
+            font-size: 15px
+            margin-right: 14px
+            +r(850)
+                font-size: 13px 
+        input
+            width: 32px
+            height: 32px
+            background: #fff
+            border-radius: 4px
+            text-align: center
+.jobs_results
+    .jobs__more
+        display: none
+        +r(850)
+            display: block                  
+                 

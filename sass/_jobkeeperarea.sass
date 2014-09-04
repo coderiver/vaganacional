@@ -8,6 +8,8 @@
         +s(logo-green)
 .submenu
     background: #f0eeef
+    +r(750)
+        display: none
     ul
         @extend %in
         float: none
@@ -194,9 +196,11 @@
     +clr
     margin-bottom: 10px
     padding-bottom: 10px
-    border-bottom: 1px solid #c1c1c1
+    border-bottom: 1px solid #dfe0e3
     .h4
         float: left
+        strong
+            font-weight: 600 
     &__right
         float: right
     +r(600)
