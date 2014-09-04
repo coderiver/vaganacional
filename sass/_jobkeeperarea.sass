@@ -44,19 +44,30 @@
         .form__top
             background: transparent
 .wrapper
-    @extend %in
     +clr
-    padding: 42px 0
+    max-width: 977px
+    margin: 0 auto
+    +r(1024)
+        padding: 0 15px 
+    +r(600)
+        padding: 0
 .content
     float: left
     width: 70%
+    +box
     +r(760)
         width: 100% 
 .sidebar
     float: right
     width: 28%
+    margin-top: 42px
+    +box
     +r(760)
-        width: 100% 
+        margin-top: 0
+        width: 100%
+    +r(600)
+        padding: 32px 15px 
+        background: #cfd4d7      
 .s-profile
     margin-bottom: 32px
     border-radius: 5px
@@ -188,15 +199,36 @@
         float: left
     &__right
         float: right
+    +r(600)
+        padding: 10px 15px
+        background: #f4f5f5
+        margin-bottom: 1px
+        border-color: #e4e5e6
+        .h4
+            font-size: 20px    
 .views
+    padding-top: 42px
+    padding-bottom: 60px
+    +r(760)
+        padding: 42px 0px 100px
+    +r(600)
+        background: #e9ebec
+        margin-bottom: 1px
+        padding: 42px 15px 15px
+        .title
+            border-bottom: none
+            background: transparent  
+            .title__right
+                float: none
+            .h4
+                float: none          
     &__period
         padding-top: 8px
         font-size: 15px
         +source-sb
         color: #c0c3c7
         text-transform: uppercase
-.stats
-    margin-bottom: 100px
+.stats 
     &__nav
         +clr
         padding-bottom: 15px
@@ -209,7 +241,7 @@
             border-left: 1px dotted #c1c1c1
             &:first-child
                 border-left: none  
-            a
+            div
                 display: block
                 +box
                 padding: 0 6% 
@@ -219,14 +251,34 @@
                 font-size: 12px
                 +source-sb
                 text-transform: uppercase
+                cursor: pointer
                 p
                     font-size: 35px
                     line-height: 1
-                &.is-active
+            &.resp-tab-active
+                div
                     color: $green
     &__graph
         img
-            max-width: 100%                
+            width: 100%
+            height: auto
+.resp-arrow
+    float: right
+    margin-top: 5px
+    +s(arr-down)
+h2.resp-accordion
+    font-size: 18px
+    +source
+    margin: 25px 0px 0px
+    padding: 10px 15px
+    background: #fff
+    border-radius: 4px
+    color: #6f757c
+    p
+        display: inline-block
+    &.resp-tab-active
+        color: $green
+        border-radius: 4px 4px 0 0     
 .jobs
     &__sort
         font-size: 0
@@ -259,6 +311,13 @@
         & > li
             +clr
             margin-bottom: 40px
+            +r(600)
+                margin-bottom: 0
+                padding: 25px 15px
+                border-top: 1px solid #e4e5e6
+                &:first-child
+                    border-top: none
+                    padding: 0 15px 25px           
     &__img
         float: left
         width: 142px
@@ -273,12 +332,26 @@
             vertical-align: middle
             max-width: 100%
             max-height: 100%
+        +r(600)
+            display: none    
     &__content
         overflow: hidden
     &__info
         overflow: hidden
-        font: Arial, sans-serif
+        font-family: Arial, sans-serif
         font-size: 15px
+        +r(600)
+            overflow: visible
+            float: left
+            width: 90%
+    &__arr
+        display: none
+        float: right
+        margin-top: 13px
+        margin-right: 10px
+        +s(arr-right-gray)
+        +r(600)
+            display: block        
     &__tools
         float: right
         width: 112px
@@ -309,18 +382,28 @@
                         +s(letter)
                     &.jobs__add
                         +s(plus2)
+        +r(600)
+            display: none                
     &__name
         +source-sb
         color: $green
         font-size: 21px
     &__company
         font-weight: bold
+        +r(600)
+            display: inline-block
     &__date
         text-transform: uppercase
         font-size: 13px
         color: #8d939a
+        +r(600)
+            display: inline-block
+            span
+                display: none
     &__descr
         color: $darkblue
+        +r(600)
+            display: none
     &__more
         margin-bottom: 50px
         border-top: 1px solid #c1c1c1 
@@ -330,6 +413,17 @@
             font: 12px Tahoma, sans-serif
             text-transform: uppercase
             color: #8e9399
+        +r(600)
+            padding-top: 0
+            margin-bottom: 1px
+            border-color: #e4e5e6
+            a
+                display: block
+                padding: 10px 0 
+                background: #e9ebec
+                color: #a5a9ad
+                font-size: 14px
+                text-decoration: none      
                     
 
 

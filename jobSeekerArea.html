@@ -6,6 +6,7 @@
 	<meta name="viewport" content="initial-scale=1"/>
 	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700italic' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:600' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" media="screen" href="css/easy-responsive-tabs.css" >
 	<link rel="stylesheet" media="screen" href="css/screen.css" >
 	<!--[if IE]><script src="js/html5shiv.js"></script><![endif]-->
 </head>
@@ -83,136 +84,145 @@
 					<div class="views__period">last 90 days</div>
 				</div>
 			</div>
-			<div class="stats js-tab-group">
-				<ul class="stats__nav js-tab">
-					<li class="is-active"><a href="js-tab1" class="is-active"><p>60</p>profile views</a></li>
-					<li><a href="js-tab2"><p>8</p>Viewer with the title CEO/Executive Director</a></li>
-					<li><a href="js-tab3"><p>3</p>Viewer from New York Area</a></li>
-					<li><a href="js-tab4"><p>13</p>Viewer found you from homepage</a></li>
+			<div class="stats" id="demoTab">
+				<ul class="stats__nav resp-tabs-list">
+					<li><div><p>60</p> profile views</div></li>
+					<li><div><p>8</p> Viewer with the title CEO/Executive Director</div></li>
+					<li><div><p>3</p> Viewer from New York Area</div></li>
+					<li><div><p>13</p> Viewer found you from homepage</div></li>
 				</ul>
-				<div class="stats__content js-tab-cont js-tab1">
-					<div class="stats__graph">
-						<img src="img/graph2.jpg" alt="">
+				<div class="resp-tabs-container">
+					<div class="stats__content">
+						<div class="stats__graph">
+							<img src="img/graph2.jpg" alt="">
+						</div>
 					</div>
-				</div>
-				<div class="stats__content js-tab-cont js-tab2">
-					<div class="stats__graph">
-						<img src="img/graph2.jpg" alt="">
+					<div class="stats__content">
+						<div class="stats__graph">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga modi doloribus eligendi, commodi magnam fugit excepturi dolores iusto, reiciendis maxime corporis cum aperiam incidunt eum debitis ducimus recusandae soluta qui?
+						</div>
 					</div>
-				</div>
-				<div class="stats__content js-tab-cont js-tab3">
-					<div class="stats__graph">
-						<img src="img/graph2.jpg" alt="">
+					<div class="stats__content">
+						<div class="stats__graph">
+							<img src="img/graph2.jpg" alt="">
+						</div>
 					</div>
-				</div>
-				<div class="stats__content js-tab-cont js-tab4">
-					<div class="stats__graph">
-						<img src="img/graph2.jpg" alt="">
+					<div class="stats__content">
+						<div class="stats__graph">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil dicta sunt eligendi neque! Impedit cumque nisi, itaque quis expedita, ipsum, obcaecati accusamus sapiente, repudiandae repellat sed? Dolorum voluptate unde nobis.
+						</div>
 					</div>
 				</div>
 			</div>
-			<div class="jobs">
-				<div class="title">
-					<h4 class="h4">Recommended Jobs</h4>
-					<div class="title__right">
-						<ul class="jobs__sort">
-							<li><a href="#" class="globus"></a></li>
-							<li><a href="#" class="fs"></a></li>
-							<li><a href="#" class="cpn is-active"></a></li>
-						</ul>
-					</div>
+			
+		</div>
+		<!-- BEGIN jobs -->
+		<div class="jobs">
+			<div class="title">
+				<h4 class="h4">Recommended Jobs</h4>
+				<div class="title__right">
+					<ul class="jobs__sort">
+						<li><a href="#" class="globus"></a></li>
+						<li><a href="#" class="fs"></a></li>
+						<li><a href="#" class="cpn is-active"></a></li>
+					</ul>
 				</div>
-				<ul class="jobs__list">
-				 	<li>
-				 		<div class="jobs__img">
-				 			<img src="img/vmware.jpg" alt="">
-				 		</div>
-				 		<div class="jobs__content">
-				 			<div class="jobs__tools">
-				 				<a href="#" class="btn btn_green">View job</a>
-				 				<ul>
-				 					<li><a href="#" class="jobs__like"></a></li>
-				 					<li><a href="#" class="jobs__letter"></a></li>
-				 					<li><a href="#" class="jobs__add"></a></li>
-				 				</ul>
-				 			</div>
-				 			<div class="jobs__info">
-				 				<div class="jobs__name">Inside Sales Rep</div>
-				 				<div class="jobs__company">VMware</div>
-				 				<div class="jobs__date">location buenos aires, arg - posted 2 days ago</div>
-				 				<div class="jobs__descr">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do bore et dolore magna aliqua. Ut enim ad minim veniam quis.</div>
-				 			</div>
-				 		</div>
-				 	</li>
-				 	<li>
-				 		<div class="jobs__img">
-				 			<img src="img/vmware.jpg" alt="">
-				 		</div>
-				 		<div class="jobs__content">
-				 			<div class="jobs__tools">
-				 				<a href="#" class="btn btn_green">View job</a>
-				 				<ul>
-				 					<li><a href="#" class="jobs__like"></a></li>
-				 					<li><a href="#" class="jobs__letter"></a></li>
-				 					<li><a href="#" class="jobs__add"></a></li>
-				 				</ul>
-				 			</div>
-				 			<div class="jobs__info">
-				 				<div class="jobs__name">Inside Sales Rep</div>
-				 				<div class="jobs__company">VMware</div>
-				 				<div class="jobs__date">location buenos aires, arg - posted 2 days ago</div>
-				 				<div class="jobs__descr">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do bore et dolore magna aliqua. Ut enim ad minim veniam quis.</div>
-				 			</div>
-				 		</div>
-				 	</li>
-				 	<li>
-				 		<div class="jobs__img">
-				 			<img src="img/vmware.jpg" alt="">
-				 		</div>
-				 		<div class="jobs__content">
-				 			<div class="jobs__tools">
-				 				<a href="#" class="btn btn_green">View job</a>
-				 				<ul>
-				 					<li><a href="#" class="jobs__like"></a></li>
-				 					<li><a href="#" class="jobs__letter"></a></li>
-				 					<li><a href="#" class="jobs__add"></a></li>
-				 				</ul>
-				 			</div>
-				 			<div class="jobs__info">
-				 				<div class="jobs__name">Inside Sales Rep</div>
-				 				<div class="jobs__company">VMware</div>
-				 				<div class="jobs__date">location buenos aires, arg - posted 2 days ago</div>
-				 				<div class="jobs__descr">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do bore et dolore magna aliqua. Ut enim ad minim veniam quis.</div>
-				 			</div>
-				 		</div>
-				 	</li>
-				 	<li>
-				 		<div class="jobs__img">
-				 			<img src="img/vmware.jpg" alt="">
-				 		</div>
-				 		<div class="jobs__content">
-				 			<div class="jobs__tools">
-				 				<a href="#" class="btn btn_green">View job</a>
-				 				<ul>
-				 					<li><a href="#" class="jobs__like"></a></li>
-				 					<li><a href="#" class="jobs__letter"></a></li>
-				 					<li><a href="#" class="jobs__add"></a></li>
-				 				</ul>
-				 			</div>
-				 			<div class="jobs__info">
-				 				<div class="jobs__name">Inside Sales Rep</div>
-				 				<div class="jobs__company">VMware</div>
-				 				<div class="jobs__date">location buenos aires, arg - posted 2 days ago</div>
-				 				<div class="jobs__descr">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do bore et dolore magna aliqua. Ut enim ad minim veniam quis.</div>
-				 			</div>
-				 		</div>
-				 	</li>
-				</ul>
-				<div class="jobs__more">
-					<a href="#">View More</a>
-				</div>
+			</div>
+			<ul class="jobs__list">
+			 	<li>
+			 		<div class="jobs__img">
+			 			<img src="img/vmware.jpg" alt="">
+			 		</div>
+			 		<div class="jobs__content">
+			 			<div class="jobs__tools">
+			 				<a href="#" class="btn btn_green">View job</a>
+			 				<ul>
+			 					<li><a href="#" class="jobs__like"></a></li>
+			 					<li><a href="#" class="jobs__letter"></a></li>
+			 					<li><a href="#" class="jobs__add"></a></li>
+			 				</ul>
+			 			</div>
+			 			<div class="jobs__info">
+			 				<div class="jobs__name">Inside Sales Rep</div>
+			 				<div class="jobs__company">VMware</div>
+			 				<div class="jobs__date">location buenos aires, arg<span> - posted 2 days ago</span></div>
+			 				<div class="jobs__descr">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do bore et dolore magna aliqua. Ut enim ad minim veniam quis.</div>
+			 			</div>
+			 			<a href="#" class="jobs__arr"></a>
+			 		</div>
+			 	</li>
+			 	<li>
+			 		<div class="jobs__img">
+			 			<img src="img/vmware.jpg" alt="">
+			 		</div>
+			 		<div class="jobs__content">
+			 			<div class="jobs__tools">
+			 				<a href="#" class="btn btn_green">View job</a>
+			 				<ul>
+			 					<li><a href="#" class="jobs__like"></a></li>
+			 					<li><a href="#" class="jobs__letter"></a></li>
+			 					<li><a href="#" class="jobs__add"></a></li>
+			 				</ul>
+			 			</div>
+			 			<div class="jobs__info">
+			 				<div class="jobs__name">Inside Sales Rep</div>
+			 				<div class="jobs__company">VMware</div>
+			 				<div class="jobs__date">location buenos aires, arg<span> - posted 2 days ago</span></div>
+			 				<div class="jobs__descr">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do bore et dolore magna aliqua. Ut enim ad minim veniam quis.</div>
+			 			</div>
+			 			<a href="#" class="jobs__arr"></a>
+			 		</div>
+			 	</li>
+			 	<li>
+			 		<div class="jobs__img">
+			 			<img src="img/vmware.jpg" alt="">
+			 		</div>
+			 		<div class="jobs__content">
+			 			<div class="jobs__tools">
+			 				<a href="#" class="btn btn_green">View job</a>
+			 				<ul>
+			 					<li><a href="#" class="jobs__like"></a></li>
+			 					<li><a href="#" class="jobs__letter"></a></li>
+			 					<li><a href="#" class="jobs__add"></a></li>
+			 				</ul>
+			 			</div>
+			 			<div class="jobs__info">
+			 				<div class="jobs__name">Inside Sales Rep</div>
+			 				<div class="jobs__company">VMware</div>
+			 				<div class="jobs__date">location buenos aires, arg<span> - posted 2 days ago</span></div>
+			 				<div class="jobs__descr">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do bore et dolore magna aliqua. Ut enim ad minim veniam quis.</div>
+			 			</div>
+			 			<a href="#" class="jobs__arr"></a>
+			 		</div>
+			 	</li>
+			 	<li>
+			 		<div class="jobs__img">
+			 			<img src="img/vmware.jpg" alt="">
+			 		</div>
+			 		<div class="jobs__content">
+			 			<div class="jobs__tools">
+			 				<a href="#" class="btn btn_green">View job</a>
+			 				<ul>
+			 					<li><a href="#" class="jobs__like"></a></li>
+			 					<li><a href="#" class="jobs__letter"></a></li>
+			 					<li><a href="#" class="jobs__add"></a></li>
+			 				</ul>
+			 			</div>
+			 			<div class="jobs__info">
+			 				<div class="jobs__name">Inside Sales Rep</div>
+			 				<div class="jobs__company">VMware</div>
+			 				<div class="jobs__date">location buenos aires, arg<span> - posted 2 days ago</span></div>
+			 				<div class="jobs__descr">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do bore et dolore magna aliqua. Ut enim ad minim veniam quis.</div>
+			 			</div>
+			 			<a href="#" class="jobs__arr"></a>
+			 		</div>
+			 	</li>
+			</ul>
+			<div class="jobs__more">
+				<a href="#">View More</a>
 			</div>
 		</div>
+		<!-- END jobs -->
 	</div>
 	<aside class="sidebar">
 		<div class="s-profile">
