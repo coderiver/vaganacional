@@ -868,3 +868,70 @@ h2.resp-accordion.resp-tab-active { color: #49bf68; border-radius: 4px 4px 0 0; 
 
 .jobs_results .jobs__more { display: none; }
 @media only screen and (max-width: 850px) { .jobs_results .jobs__more { display: block; } }
+
+.topmenu_empl { background: #222e3a; }
+.topmenu_empl ul a { color: #abafb2; }
+.topmenu_empl .logo-inner a { background: url('../img/icons-sc12e8d1113.png') 0 -1201px no-repeat; width: 259px; height: 40px; }
+.topmenu_empl .topmenu__other { width: auto; }
+
+.emp { position: relative; background: url(../img/landing2.jpg); background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; }
+.emp .toparea__in { min-height: 340px; height: auto; }
+.emp__advert { padding-top: 90px; padding-bottom: 30px; width: 50%; margin: 0 auto; text-align: center; text-transform: uppercase; font-family: "Source Sans Pro", Tahoma, sans-serif; font-weight: 300; color: white; font-size: 28px; }
+@media only screen and (max-width: 1024px) { .emp__advert { width: 70%; padding-top: 60px; } }
+@media only screen and (max-width: 760px) { .emp__advert { width: 80%; padding-top: 35px; } }
+.emp__title { font-family: "Source Sans Pro", Tahoma, sans-serif; font-weight: 600; font-size: 34px; line-height: 1; margin-bottom: 20px; }
+.emp__phone { padding-top: 15px; font-family: "Source Sans Pro", Tahoma, sans-serif; font-weight: 300; font-size: 16px; }
+.emp__phone span { font-family: "Source Sans Pro", Tahoma, sans-serif; font-weight: 600; }
+
+.services { padding: 60px 0 70px; background: whitesmoke; }
+@media only screen and (max-width: 1024px) { .services { padding: 60px 15px 70px; } }
+.services__in { max-width: 977px; margin: 0 auto; }
+.services__list { text-align: justify; line-height: 0; font-size: 1px; text-justify: newspaper; zoom: 1; text-align-last: justify; font-size: 0; }
+.services__list:after { content: ""; display: inline-block; width: 100%; height: 0px; visibility: hidden; overflow: hidden; }
+.services__item { display: inline-block; line-height: normal; vertical-align: top; font-size: 15px; width: 225px; text-align: center; }
+@media only screen and (max-width: 750px) { .services__item { width: 100%; } }
+.services__img { height: 70px; margin-bottom: 15px; }
+.services__img:before { content: ""; display: inline-block; width: 0; height: 100%; vertical-align: middle; }
+.services__img img { display: inline-block; vertical-align: middle; max-width: 100%; }
+@media only screen and (max-width: 750px) { .services__img { float: left; margin-right: 10px; }
+  .services__img img { width: 75px; } }
+@media only screen and (max-width: 750px) { .services__info { overflow: hidden; text-align: left; } }
+.services__title { margin-bottom: 5px; font-family: "Source Sans Pro", Tahoma, sans-serif; font-weight: 600; font-size: 22px; color: #222e3a; text-transform: uppercase; }
+.services__text { margin-bottom: 10px; }
+.services__link { font-size: 13px; font-family: "Source Sans Pro", Tahoma, sans-serif; font-weight: 600; color: #f4503e; text-transform: uppercase; }
+.services__link:hover { text-decoration: none; }
+
+@media only screen and (max-width: 900px) { .promo { padding: 0 16px; } }
+@media only screen and (max-width: 750px) { .promo { display: none; } }
+.promo__list { max-width: 977px; margin: 0 auto; }
+.promo__item { *zoom: 1; padding: 45px 0; border-top: 1px solid #dee0e2; }
+.promo__item:after { content: " "; display: table; clear: both; }
+.promo__item:first-child { border-top: none; }
+.promo__text { float: left; padding-top: 50px; width: 40%; font: 16px Tahoma, sans-serif; color: #a0a4a8; }
+.promo__text p { margin-bottom: 15px; }
+.promo__text a { font-family: "Source Sans Pro", Tahoma, sans-serif; font-weight: 400; font-size: 13px; color: #a0a4a8; text-transform: uppercase; }
+.promo__text .btn { padding: 0 15px; margin-bottom: 20px; }
+.promo__img { float: left; width: 60%; font-size: 0; text-align: center; }
+.promo__img img { display: inline-block; max-width: 90%; }
+.promo__title { font-family: "Source Sans Pro", Tahoma, sans-serif; font-weight: 600; text-transform: uppercase; color: #222e3a; font-size: 32px; line-height: 1; margin-bottom: 20px; }
+
+.features__title { margin-bottom: 30px; font-family: "Source Sans Pro", Tahoma, sans-serif; font-weight: 600; font-size: 24px; text-transform: uppercase; color: #49bf68; }
+.features__list { text-align: justify; line-height: 0; font-size: 1px; text-justify: newspaper; zoom: 1; text-align-last: justify; }
+.features__list:after { content: ""; display: inline-block; width: 100%; height: 0px; visibility: hidden; overflow: hidden; }
+.features__list > li { display: inline-block; line-height: normal; vertical-align: top; font-size: 15px; margin-bottom: 40px; width: 30%; font: 15px Tahoma, sans-serif; color: #6f757c; text-align: left; }
+.features__name { margin-bottom: 10px; font-family: "Source Sans Pro", Tahoma, sans-serif; font-weight: 600; text-transform: uppercase; font-size: 19px; color: #222e3a; }
+.features__theme { font-family: "Source Sans Pro", Tahoma, sans-serif; font-weight: 600; color: #49bf68; text-transform: uppercase; font-size: 16px; }
+
+.feedback { padding: 35px 0 40px; background: whitesmoke; }
+@media only screen and (max-width: 1024px) { .feedback { padding: 35px 15px 40px; } }
+@media only screen and (max-width: 750px) { .feedback { background: white; padding: 35px 35px 40px; } }
+.feedback__in { *zoom: 1; max-width: 977px; margin: 0 auto; }
+.feedback__in:after { content: " "; display: table; clear: both; }
+.feedback__left { float: left; font-family: "Source Sans Pro", Tahoma, sans-serif; font-weight: 600; }
+.feedback__left span { font-size: 20px; color: #222e3a; }
+.feedback__left p { font-size: 23px; color: #f4503e; text-transform: uppercase; }
+@media only screen and (max-width: 750px) { .feedback__left { width: 100%; } }
+.feedback__right { float: right; padding-top: 10px; }
+.feedback__right .btn { text-decoration: none; line-height: 45px; }
+@media only screen and (max-width: 750px) { .feedback__right { width: 100%; } }
+@media only screen and (max-width: 480px) { .feedback__right .btn { line-height: 35px; } }

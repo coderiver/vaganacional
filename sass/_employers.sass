@@ -1,0 +1,208 @@
+// styles for employers page
+.topmenu_empl
+    background: #222e3a
+    ul
+        a
+            color: #abafb2
+    .logo-inner
+        a
+            +s(logo-landing)
+    .topmenu__other
+        width: auto                
+.emp
+    position: relative
+    background: url(../img/landing2.jpg)
+    +cover 
+    .toparea__in
+        min-height: 340px
+        height: auto
+    &__advert
+        padding-top: 90px
+        padding-bottom: 30px 
+        width: 50%
+        margin: 0 auto
+        text-align: center
+        text-transform: uppercase
+        +source-l
+        color: #fff
+        font-size: 28px
+        +r(1024)
+            width: 70%
+            padding-top: 60px
+        +r(760)
+            width: 80% 
+            padding-top: 35px    
+    &__title
+        +source-sb
+        font-size: 34px
+        line-height: 1
+        margin-bottom: 20px
+    &__phone
+        padding-top: 15px 
+        +source-l
+        font-size: 16px
+        span
+            +source-sb          
+.services
+    padding: 60px 0 70px
+    background: #f5f5f5
+    +r(1024)
+        padding: 60px 15px 70px               
+    &__in
+        max-width: 977px
+        margin: 0 auto 
+    &__list
+        +justify
+        font-size: 0
+    &__item
+        +justify-child
+        width: 225px
+        text-align: center
+        +r(750)
+            width: 100% 
+    &__img
+        height: 70px
+        margin-bottom: 15px
+        &:before
+            content: ""
+            display: inline-block
+            width: 0
+            height: 100%
+            vertical-align: middle
+        img
+            display: inline-block
+            vertical-align: middle
+            max-width: 100%
+        +r(750)
+            float: left
+            margin-right: 10px
+            img
+                width: 75px
+    &__info
+        +r(750)
+            overflow: hidden
+            text-align: left            
+    &__title
+        margin-bottom: 5px
+        +source-sb
+        font-size: 22px
+        color: $darkblue
+        text-transform: uppercase
+    &__text
+        margin-bottom: 10px
+    &__link
+        font-size: 13px
+        +source-sb
+        color: $red
+        text-transform: uppercase
+        &:hover
+            text-decoration: none    
+.promo
+    +r(900)
+        padding: 0 16px
+    +r(750)
+        display: none    
+    &__list
+        max-width: 977px
+        margin: 0 auto 
+    &__item
+        +clr
+        padding: 45px 0
+        border-top: 1px solid #dee0e2 
+        &:first-child
+            border-top: none       
+    &__text
+        float: left
+        padding-top: 50px
+        width: 40%
+        font: 16px Tahoma, sans-serif
+        color: #a0a4a8
+        p
+            margin-bottom: 15px
+        a
+            +source
+            font-size: 13px
+            color: #a0a4a8
+            text-transform: uppercase      
+        .btn
+            padding: 0 15px
+            margin-bottom: 20px  
+    &__img
+        float: left
+        width: 60%
+        font-size: 0
+        text-align: center
+        img
+            display: inline-block
+            max-width: 90%
+    &__title
+        +source-sb
+        text-transform: uppercase
+        color: $darkblue
+        font-size: 32px
+        line-height: 1
+        margin-bottom: 20px              
+.features
+    &__title
+        margin-bottom: 30px
+        +source-sb
+        font-size: 24px
+        text-transform: uppercase
+        color: $green        
+    &__list
+        +justify
+        & > li
+            +justify-child
+            margin-bottom: 40px 
+            width: 30%
+            font: 15px Tahoma, sans-serif
+            color: #6f757c
+            text-align: left 
+    &__name
+        margin-bottom: 10px
+        +source-sb
+        text-transform: uppercase
+        font-size: 19px
+        color: $darkblue
+    &__theme
+        +source-sb
+        color: $green
+        text-transform: uppercase
+        font-size: 16px
+        
+.feedback
+    padding: 35px 0 40px 
+    background: #f5f5f5
+    +r(1024)
+        padding: 35px 15px 40px
+    +r(750)
+        background: #FFF
+        padding: 35px 35px 40px      
+    &__in
+        +clr
+        max-width: 977px
+        margin: 0 auto              
+    &__left
+        float: left
+        +source-sb
+        span
+            font-size: 20px
+            color: $darkblue
+        p
+            font-size: 23px
+            color: $red
+            text-transform: uppercase
+        +r(750)
+            width: 100%     
+    &__right
+        float: right
+        padding-top: 10px
+        .btn
+            text-decoration: none
+            line-height: 45px
+        +r(750)
+            width: 100%
+        +r(480)
+            .btn
+                line-height: 35px                 
+             
