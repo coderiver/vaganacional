@@ -6,6 +6,9 @@
 	<meta name="viewport" content="initial-scale=1"/>
 	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700italic' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:600' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" media="screen" href="css/textext.core.css" >
+	<link rel="stylesheet" media="screen" href="css/textext.plugin.tags.css" >
+	<link rel="stylesheet" media="screen" href="css/jquery-ui.css" >
 	<link rel="stylesheet" media="screen" href="css/easy-responsive-tabs.css" >
 	<link rel="stylesheet" media="screen" href="css/screen.css" >
 	<!--[if IE]><script src="js/html5shiv.js"></script><![endif]-->
@@ -142,7 +145,17 @@
 					<li class="m-filters__item">
 						<div class="m-filters__title js-filter-btn">Location</div>
 						<div class="m-filters__block js-filter-item">
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint mollitia optio quos commodi nam sunt in, animi sed nobis. Cupiditate quidem reprehenderit soluta facilis, veniam tempora illum error velit? Ipsam!
+							<p>What location(s) would you like to work in?</p>
+							<textarea id="textarea" class="m-filters__textarea"></textarea>
+							<p>Distance</p>
+							<div class="m-filters__slider">
+								<div id="slider-range-min"></div>
+								<p>
+									<label for="amount">Até</label>
+									<input type="text" id="amount" readonly>
+									<label for="amount">km</label>
+								</p>
+							</div>
 						</div>
 					</li>
 					<li class="m-filters__item">

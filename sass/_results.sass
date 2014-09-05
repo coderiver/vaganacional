@@ -108,11 +108,22 @@
             top: 19px
             right: 11px
             +s(arr-down)
+        &.is-open
+            color: $red    
     &__block
         position: relative
         padding: 10px 25px 25px
+        & > p
+            font: 15px Tahoma, sans-serif
+            color: $darkblue
+            margin-bottom: 10px 
         +r(480)
-            padding: 10px 17px 20px 
+            padding: 10px 17px 20px
+    &__textarea
+        width: 100%!important
+        +box
+        background: #e9ebec
+        border-radius: 4px           
     &__more
         position: absolute
         bottom: 15px
@@ -151,7 +162,17 @@
                 color: #fff
                 &:before
                     content: "-"
-                    left: 12px                 
+                    left: 12px
+    &__slider
+        font: bold 15px Arial, sans-serif
+        color: #e64b3a
+        & > p
+            text-align: center
+        input
+            width: 20px 
+            display: inline-block
+            font: bold 15px Arial, sans-serif
+            color: #e64b3a                                 
 .subscribe
     border-radius: 4px
     background: #f0eeef
@@ -296,5 +317,4 @@
     .jobs__more
         display: none
         +r(850)
-            display: block                  
-                 
+            display: block

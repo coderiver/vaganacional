@@ -52,13 +52,30 @@ head.ready(function() {
 		//$('.js-filter-item').hide();
 
 		btn.on('click', function(){
-			$(this).parent().find('.js-filter-item').slideToggle();
+			$(this).toggleClass('is-open').parent().find('.js-filter-item').slideToggle();
 		});
 
 	}
 	if ($('.m-filters').length) {
 		filters();
 	};
+
+// tags add
+
+	$('#textarea').textext({plugins: 'tags'});
+
+// iu slider
+
+	$( "#slider-range-min" ).slider({
+      range: "min",
+      value: 35,
+      min: 1,
+      max: 99,
+      slide: function( event, ui ) {
+        $( "#amount" ).val( ui.value );
+      }
+    });
+    $( "#amount" ).val( $( "#slider-range-min" ).slider( "value" ) );		
 
 // select
     function select() {
