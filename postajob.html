@@ -6,6 +6,9 @@
 	<meta name="viewport" content="initial-scale=1"/>
 	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700italic' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:600' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" media="screen" href="css/textext.core.css" >
+	<link rel="stylesheet" media="screen" href="css/jquery-ui.css" >
+	<link rel="stylesheet" media="screen" href="css/textext.plugin.tags.css" >
 	<link rel="stylesheet" media="screen" href="css/screen.css" >
 	<!--[if IE]><script src="js/html5shiv.js"></script><![endif]-->
 </head>
@@ -32,9 +35,10 @@
 <!-- end topmenu -->
 
 <!-- begin toparea  -->
-<div class="toparea">
+<div class="toparea toparea_job">
 	<div class="toparea__in">
-		
+		<h1 class="h1">Anuncie uma Vaga</h1>
+		<div class="subtitle">Precisa de ajuda?  Entre em contato conosco</div>
 	</div>
 </div>
 <!-- end toparea -->
@@ -50,21 +54,402 @@
 				</div>
 			</div>
 			<div class="account__right">
-				<div class="input">
+				<div class="input input_dib">
 					<p>Cargo</p>
 					<input type="text">
+				</div>
+				<div class="fraco">
+					<a href="#">» Fraco</a>
 				</div>
 			</div>
 		</div>
 		<div class="textarea">
 			<p>Describe yourself <span>(Descreva os requisitos desta vaga, como experiencia de trabalho necessaria, nivel de escolaridade, habilidades, etc.)</span></p>
 			<textarea></textarea>
+			<div class="textarea__tools">
+				<span>Opcoes de Formatacao </span>
+				<ul>
+					<li>
+						<button><strong>B</strong></button>
+					</li>
+					<li>
+						<button><i>I</i></button>
+					</li>
+					<li>
+						<button><u>U</u></button>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="textarea textarea_job">
+			<p>Cidade e Estado - <strong>Brasil</strong> <a href="#">(Mudar)</a></p>
+			<div class="clr">
+				<div class="textarea__left">
+					<textarea class="js-textarea"></textarea>
+				</div>
+				<div class="textarea__right">
+					<label class="checkbox">
+						<input type="checkbox">
+						<span>Telecommute</span>
+					</label>
+				</div>
+			</div>
+		</div>
+		<div class="divide"></div>
+		<div class="job-details">
+			<div class="job-details__left">
+				<div class="job-details__position">
+					<div class="job-details__title">Preferred Position</div>
+					<label class="checkbox">
+						<input type="checkbox">
+						<span>Full-time</span>
+					</label>
+					<label class="checkbox">
+						<input type="checkbox">
+						<span>Internship</span>
+					</label>
+					<label class="checkbox">
+						<input type="checkbox">
+						<span>Part-time</span>
+					</label>
+					<label class="checkbox checkbox_month">
+						<input type="checkbox">
+						<span>month Contract</span>
+						<input type="text" placeholder="0">
+					</label>
+					<label class="checkbox checkbox_month">
+						<input type="checkbox">
+						<span>month Contract-to-hire</span>
+						<input type="text" placeholder="0">
+					</label>
+				</div>
+			</div>
+			<div class="job-details__right">
+				<div class="job-slider">
+					<div class="job-slider__title">Salary Range</div>
+					<div class="clr">
+						<div class="job-slider__range">
+							<div id="slider-salary"></div>
+						</div>
+						<div class="job-slider__value">
+							<input type="text" id="salary" readonly>
+						</div>
+					</div>
+				</div>
+				<div class="job-slider">
+					<div class="job-slider__title">Weekend Work</div>
+					<div class="clr">
+						<div class="job-slider__range">
+							<div id="slider-weekend"></div>
+						</div>
+						<div class="job-slider__value">
+							<input type="text" id="weekend" readonly>
+						</div>
+					</div>
+				</div>
+				<div class="job-slider">
+					<div class="job-slider__title">Hours</div>
+					<div class="clr">
+						<div class="job-slider__range">
+							<div id="slider-hours"></div>
+						</div>
+						<div class="job-slider__value">
+							<input type="text" id="hours" readonly>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="skills">
+			<div class="skills__add">
+				<p>Request Skills</p>
+				<ul class="skills__list">
+					<li class="skills__item">
+						<button class="skills__delete"></button>
+						<ul class="skills__level">
+							<li>
+								<input type="radio" name="skill">
+								<span>1</span>
+							</li>
+							<li>
+								<input type="radio" name="skill">
+								<span>2</span>
+							</li>
+							<li>
+								<input type="radio" name="skill">
+								<span>3</span>
+							</li>
+							<li>
+								<input type="radio" name="skill">
+								<span>4</span>
+							</li>
+							<li>
+								<input type="radio" name="skill">
+								<span>5</span>
+							</li>
+							<li>
+								<input type="radio" name="skill">
+								<span>6</span>
+							</li>
+							<li>
+								<input type="radio" name="skill">
+								<span>7</span>
+							</li>
+							<li>
+								<input type="radio" name="skill">
+								<span>8</span>
+							</li>
+							<li>
+								<input type="radio" name="skill">
+								<span>9</span>
+							</li>
+							<li>
+								<input type="radio" name="skill">
+								<span>10</span>
+							</li>
+						</ul>
+						<div class="skills__point">5</div>
+						<div class="skills__name">
+							<input type="text">
+						</div>
+					</li>
+					<li class="skills__item">
+						<button class="skills__delete"></button>
+						<ul class="skills__level">
+							<li>
+								<input type="radio" name="skill2">
+								<span>1</span>
+							</li>
+							<li>
+								<input type="radio" name="skill2">
+								<span>2</span>
+							</li>
+							<li>
+								<input type="radio" name="skill2">
+								<span>3</span>
+							</li>
+							<li>
+								<input type="radio" name="skill2">
+								<span>4</span>
+							</li>
+							<li>
+								<input type="radio" name="skill2">
+								<span>5</span>
+							</li>
+							<li>
+								<input type="radio" name="skill2">
+								<span>6</span>
+							</li>
+							<li>
+								<input type="radio" name="skill2">
+								<span>7</span>
+							</li>
+							<li>
+								<input type="radio" name="skill2">
+								<span>8</span>
+							</li>
+							<li>
+								<input type="radio" name="skill2">
+								<span>9</span>
+							</li>
+							<li>
+								<input type="radio" name="skill2">
+								<span>10</span>
+							</li>
+						</ul>
+						<div class="skills__point">3</div>
+						<div class="skills__name">
+							<input type="text">
+						</div>
+					</li>
+					<li class="skills__item">
+						<button class="skills__delete"></button>
+						<ul class="skills__level">
+							<li>
+								<input type="radio" name="skill3">
+								<span>1</span>
+							</li>
+							<li>
+								<input type="radio" name="skill3">
+								<span>2</span>
+							</li>
+							<li>
+								<input type="radio" name="skill3">
+								<span>3</span>
+							</li>
+							<li>
+								<input type="radio" name="skill3">
+								<span>4</span>
+							</li>
+							<li>
+								<input type="radio" name="skill3">
+								<span>5</span>
+							</li>
+							<li>
+								<input type="radio" name="skill3">
+								<span>6</span>
+							</li>
+							<li>
+								<input type="radio" name="skill3">
+								<span>7</span>
+							</li>
+							<li>
+								<input type="radio" name="skill3">
+								<span>8</span>
+							</li>
+							<li>
+								<input type="radio" name="skill3">
+								<span>9</span>
+							</li>
+							<li>
+								<input type="radio" name="skill3">
+								<span>10</span>
+							</li>
+						</ul>
+						<div class="skills__point">7</div>
+						<div class="skills__name">
+							<input type="text">
+						</div>
+					</li>
+					<li class="skills__item">
+						<button class="skills__delete"></button>
+						<ul class="skills__level">
+							<li>
+								<input type="radio" name="skill4">
+								<span>1</span>
+							</li>
+							<li>
+								<input type="radio" name="skill4">
+								<span>2</span>
+							</li>
+							<li>
+								<input type="radio" name="skill4">
+								<span>3</span>
+							</li>
+							<li>
+								<input type="radio" name="skill4">
+								<span>4</span>
+							</li>
+							<li>
+								<input type="radio" name="skill4">
+								<span>5</span>
+							</li>
+							<li>
+								<input type="radio" name="skill4">
+								<span>6</span>
+							</li>
+							<li>
+								<input type="radio" name="skill4">
+								<span>7</span>
+							</li>
+							<li>
+								<input type="radio" name="skill4">
+								<span>8</span>
+							</li>
+							<li>
+								<input type="radio" name="skill4">
+								<span>9</span>
+							</li>
+							<li>
+								<input type="radio" name="skill4">
+								<span>10</span>
+							</li>
+						</ul>
+						<div class="skills__point">6</div>
+						<div class="skills__name">
+							<input type="text">
+						</div>
+					</li>
+				</ul>
+				<div class="skills__new">
+					<button class="skills__new-btn"></button>
+					<div class="skills__empty"></div>
+					<div class="input">
+						<input type="text" placeholder="Please enter a skill">
+					</div>
+				</div>
+				<div class="skills__import">
+					<button class="skills__import-btn skills__import-btn_job"></button>
+					<div class="skills__import-wrap">
+						<a href="#" class="social-btn social-btn_job">Import skills from Linkedin <span>(10 a 30 skills)</span></a>
+					</div>
+				</div>
+			</div>
+			<div class="skills__tags">
+				<p>Other related skills</p>
+				<ul>
+					<li><a href="#">Java</a></li>
+					<li><a href="#">Communications skills</a></li>
+					<li><a href="#">php</a></li>
+					<li><a href="#">Developer</a></li>
+					<li><a href="#">Design</a></li>
+					<li><a href="#">Software development</a></li>
+					<li><a href="#">Web services</a></li>
+					<li><a href="#">Systems</a></li>
+					<li><a href="#">Communications</a></li>
+					<li><a href="#">Design</a></li>
+					<li><a href="#">mysql</a></li>
+					<li><a href="#">Linux</a></li>
+					<li><a href="#">.net</a></li>
+					<li><a href="#">xml</a></li>
+					<li><a href="#">sql</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="divide"></div>
+		<div class="expire">
+			<p>Expires on</p>
+			<div class="expire__in">
+				<div class="select select_year js-select">
+					<div class="select__text js-select-text">3</div>
+					<input type="hidden" class="js-select-input" value="">
+					<ul class="select__dropdown js-select-list" style="display: none;">
+						<li><a href="#">1</a></li>
+						<li><a href="#">2</a></li>
+						<li><a href="#">3</a></li>
+						<li><a href="#">4</a></li>
+					</ul>
+				</div>
+				<div class="select select_month js-select">
+					<div class="select__text js-select-text">Month</div>
+					<input type="hidden" class="js-select-input">
+					<ul class="select__dropdown js-select-list" style="display: none;">
+						<li><a href="#">2011</a></li>
+						<li><a href="#">2012</a></li>
+						<li><a href="#">2013</a></li>
+						<li><a href="#">2014</a></li>
+					</ul>
+				</div>
+				<div class="select select_year js-select">
+					<div class="select__text js-select-text">Year</div>
+					<input type="hidden" class="js-select-input">
+					<ul class="select__dropdown js-select-list" style="display: none;">
+						<li><a href="#">2011</a></li>
+						<li><a href="#">2012</a></li>
+						<li><a href="#">2013</a></li>
+						<li><a href="#">2014</a></li>
+					</ul>
+				</div>
+				<label class="checkbox">
+					<input type="checkbox">
+					<span>Urgent hiring? (Show as urgent)</span>
+				</label>
+			</div>
 		</div>	
 	</div>
 	<div class="divide"></div>	
 	<div class="account__bottom">
-		<button class="btn btn_gray">Cancel</button>
-		<button class="btn btn_red">Save</button>
+		<div class="clr">
+			<div class="account__bottom-left">
+				<div class="contact-email">
+					Os curriculos dos candidatos serao recebidos no: dionisio@me.com  (<a href="#">mudar e-mail</a>)
+				</div>
+			</div>
+			<div class="account__bottom-right">
+				<button class="btn btn_gray">Cancel</button>
+				<button class="btn btn_red">Save</button>
+			</div>
+		</div>
 	</div>
 </div>
 <!-- END account -->

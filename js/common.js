@@ -49,7 +49,7 @@ head.ready(function() {
 
 	function filters(){
 		var btn = $('.js-filter-btn');
-		//$('.js-filter-item').hide();
+		$('.js-filter-item').hide();
 
 		btn.on('click', function(){
 			$(this).toggleClass('is-open').parent().find('.js-filter-item').slideToggle();
@@ -61,21 +61,59 @@ head.ready(function() {
 	};
 
 // tags add
-
-	$('#textarea').textext({plugins: 'tags'});
+	
+	if ($('.js-textarea').length) {
+		$('.js-textarea').each(function(){
+			$(this).textext({plugins: 'tags'});
+		});
+	};
 
 // iu slider
 
 	$( "#slider-range-min" ).slider({
       range: "min",
-      value: 35,
       min: 1,
-      max: 99,
+      max: 200,
+
       slide: function( event, ui ) {
         $( "#amount" ).val( ui.value );
       }
     });
-    $( "#amount" ).val( $( "#slider-range-min" ).slider( "value" ) );		
+    $( "#amount" ).val( $( "#slider-range-min" ).slider( "value" ) );
+
+    $( "#slider-salary" ).slider({
+      range: true,
+      min: 0,
+      max: 200,
+      values: [ 0, 100 ],
+      slide: function( event, ui ) {
+        $( "#salary" ).val( "$" + ui.values[ 0 ] + " - $" + ui.values[ 1 ] );
+      }
+    });
+    $( "#salary" ).val( "$" + $( "#slider-salary" ).slider( "values", 0 ) +
+      " - $" + $( "#slider-salary" ).slider( "values", 1 ) );
+
+    $( "#slider-weekend" ).slider({
+      range: "min",		
+      min: 0,
+      max: 2,
+      slide: function( event, ui ) {
+        $( "#weekend" ).val( ui.value );
+      }
+    });
+    $( "#weekend" ).val( $( "#slider-weekend" ).slider( "value" ) );
+
+    $( "#slider-hours" ).slider({
+      range: "min",		
+      min: 0,
+      max: 60,
+      value: 40,
+      slide: function( event, ui ) {
+        $( "#hours" ).val( ui.value );
+      }
+    });
+    $( "#hours" ).val( $( "#slider-hours" ).slider( "value" ) );
+
 
 // select
     function select() {

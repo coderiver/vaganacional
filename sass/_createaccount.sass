@@ -167,6 +167,9 @@
         +box
         padding: 0 10px
         +source
+        +placeholder
+            font: italic 15 Arial, sans-serif
+            font-weight: normal
 .select-year
     +r(750)
         margin-bottom: 25px
@@ -277,6 +280,8 @@
         span
             color: #93969b
             font-size: 14px
+        a
+            color: $darkblue 
     textarea
         width: 100% 
         height: 156px
@@ -643,6 +648,8 @@
             top: 9px
             left: 10px
             +s(add)
+        &.skills__import-btn_job
+            background: #2b3641     
     &__import-wrap
         float: left
         width: 413px

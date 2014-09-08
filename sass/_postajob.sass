@@ -1,3 +1,173 @@
 // styles for postajob
+.toparea_job
+    border-bottom: 7px solid $darkblue 
+    .h1
+        padding: 60px 0 0 
+.subtitle
+    +source-sb
+    font-size: 19px
+    color: $green         
 .account_job
-    margin: 48px auto 
+    margin: 48px auto
+    .account__right
+        font-size: 0 
+.input_dib
+    display: inline-block
+    vertical-align: middle
+    width: 80%
+.fraco
+    display: inline-block
+    vertical-align: middle
+    width: 20%
+    text-align: right
+    a
+        +opensans-sb
+        font-size: 15px
+        color: $green
+        text-decoration: none
+        &:hover
+            text-decoration: underline
+.textarea__tools
+    span, ul
+        display: inline-block
+        vertical-align: middle
+    span
+        margin-right: 15px
+        font: 13px Arial, sans-serif
+        color: #93989e
+    ul
+        font-size: 0
+        li
+            display: inline-block
+            vertical-align: middle
+            margin-right: 10px
+            button
+                background: transparent
+                color: $green
+                font-weight: bold                 
+.textarea_job
+    textarea
+        height: 88px
+        width: 100%!important 
+        background: #FFF!important
+    .text-button
+        background: #f0efef!important
+        color: $green!important      
+.textarea__left
+    float: left
+    width: 79%
+    +r(650)
+        width: 100% 
+.textarea__right
+    float: right
+    width: 19%
+    +r(650)
+        width: 100%
+    .checkbox
+        padding-top: 0
+.job-details
+    +clr
+    &__title
+        font: 15px Arial, sans-serif
+        color: $darkblue
+        margin-bottom: 10px
+    &__left
+        float: left
+        width: 25%
+        +r(900)
+            width: 35%
+        +r(600)
+            width: 100%
+            margin-bottom: 25px     
+    &__right
+        float: right
+        width: 70%
+        +r(900)
+            width: 60%
+        +r(600)
+            width: 100%                                
+    &__position
+        .checkbox
+            display: block
+            input[type="checkbox"] + span
+                font-size: 15px
+                padding-top: 0
+            input[type="text"]
+                position: absolute
+                top: 10px
+                left: 28px
+                width: 30px
+                height: 24px
+                background: #fff
+                border-radius: 4px
+                text-align: center
+                color: #c3c3c3
+                font-style: italic
+        .checkbox_month              
+            input[type="checkbox"] + span
+                padding-left: 50px
+.job-slider
+    margin-bottom: 25px
+    &__title
+        font: 15px Arial, sans-serif
+        color: $darkblue
+        margin-bottom: 10px
+    &__range
+        float: left
+        width: 80%
+        .ui-slider-horizontal
+            background: #d4d4d4
+        .ui-slider
+            .ui-slider-range
+                background: $green     
+    &__value
+        float: right
+        width: 18%
+        margin-top: -5px
+        input
+            width: 100% 
+            background: transparent
+            color: $green
+            +source-sb
+            font-size: 15px
+.expire            
+    & > p
+        font: 15px Arial, sans-serif
+        color: $darkblue
+        margin-bottom: 10px
+    &__in
+        font-size: 0
+        margin-left: -14px
+        .select
+            display: inline-block
+            vertical-align: middle
+            margin-left: 14px
+            margin-bottom: 10px              
+        .checkbox
+            display: inline-block
+            vertical-align: middle
+            margin-left: 24px
+            padding-top: 5px
+            font-size: 15px
+            input[type="checkbox"] + span
+                padding-top: 0
+.account__bottom-left
+    float: left
+    width: 50%
+    +r(768)
+        width: 100%
+        margin-bottom: 25px                     
+.account__bottom-right
+    float: right
+    width: 50%
+    +r(768)
+        float: left
+        width: 100%                  
+.contact-email
+    overflow: hidden
+    text-align: left
+    padding-right: 50px
+    font: 14px Arial, sans-serif
+    color: #767676
+    a
+        color: $red           

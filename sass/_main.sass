@@ -332,9 +332,9 @@
 	position: relative
 	display: inline-block
 	padding-top: 10px
-	input
+	input[type="checkbox"]
 		opacity: 0 
-	input + span
+	input[type="checkbox"] + span
 		position: relative
 		padding-left: 15px
 		padding-top: 3px
@@ -350,7 +350,7 @@
 			border: 1px solid #ccc
 			border-radius: 4px
 			background: #FFF
-	input:checked + span
+	input[type="checkbox"]:checked + span
 		&:after
 			content: ""
 			position: absolute
@@ -390,7 +390,11 @@
 		left: 48px
 		width: 1px  	 
 		border-right: 1px solid #015a8b
-		+box-shadow(inset -1px 0 0px 0 #5da6ce)   
+		+box-shadow(inset -1px 0 0px 0 #5da6ce)
+	&.social-btn_job
+		background: #2b3641 
+		&:before
+			display: none	   
 	&.social-btn_linkedin
 		i
 			&:before
