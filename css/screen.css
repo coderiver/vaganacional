@@ -201,8 +201,10 @@ body { font-family: Tahoma, Arial, sans-serif; font-size: 12px; line-height: 1.4
 .empl .empl__slides:after { content: " "; display: table; clear: both; }
 .empl .empl__wrap { position: relative; padding-bottom: 50px; margin-bottom: 50px; }
 .empl .empl__slide { display: inline-block; vertical-align: bottom; text-align: center; text-decoration: none; font-size: 13px; color: #a0a0a0; float: left; min-height: 100px; position: relative; }
-.empl .empl__slide a { color: #a0a0a0; text-decoration: none; }
-.empl .empl__slide .empl__number { position: absolute; bottom: 0; left: 0; width: 100%; text-align: center; }
+.empl .empl__slide a { display: block; height: 100px; line-height: 100px; vertical-align: middle; color: #a0a0a0; text-decoration: none; font-size: 0; }
+.empl .empl__slide a img { display: inline-block; vertical-align: middle; max-width: 140px; filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0'/></filter></svg>#grayscale"); filter: gray; -webkit-filter: grayscale(100%); filter: progid:DXImageTransform.Microsoft.BasicImage(grayScale=1); -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(grayScale=1)"; opacity: 0.5; -moz-transition: all 200ms; -o-transition: all 200ms; -webkit-transition: all 200ms; transition: all 200ms; }
+.empl .empl__slide a:hover img { opacity: 1; filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='matrix' values='1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 1 0'/></filter></svg>#grayscale"); -webkit-filter: grayscale(0%); }
+.empl .empl__slide .empl__number { position: absolute; bottom: -5px; left: 0; width: 100%; text-align: center; font-size: 13px; line-height: 1; }
 .empl .empl__title { margin-bottom: 30px; text-align: center; font-size: 24px; font-weight: normal; color: #9ea1a4; text-align: center; }
 .empl .empl__next, .empl .empl__prev, .empl .slick-next, .empl .slick-prev { position: absolute; top: 50%; margin-top: -22px; cursor: pointer; font: 0/0 a; text-shadow: none; color: transparent; }
 .empl .emple__next, .empl .slick-next { background: url('../img/icons-sc12e8d1113.png') 0 -1537px no-repeat; width: 23px; height: 44px; right: 0; }

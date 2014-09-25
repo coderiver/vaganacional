@@ -179,14 +179,32 @@
 		min-height: 100px 
 		position: relative
 		a
+			display: block
+			height: 100px
+			line-height: 100px 
+			vertical-align: middle
 			color: #a0a0a0 
 			text-decoration: none
+			font-size: 0
+			img
+				display: inline-block
+				vertical-align: middle
+				max-width: 140px
+				+gray
+				opacity: 0.5
+				+tr(all 200ms)
+			&:hover
+				img
+					opacity: 1
+					+gray-zero	
 		.empl__number
 			position: absolute
-			bottom: 0
+			bottom: -5px
 			left: 0
 			width: 100% 
-			text-align: center   
+			text-align: center
+			font-size: 13px
+			line-height: 1   
 	.empl__title
 		margin-bottom: 30px 
 		text-align: center
