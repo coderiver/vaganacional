@@ -86,90 +86,100 @@
 				<a href="#" class="post">Post your CV</a>
 			</div>
 		</div>
-		<div class="filters">
-			<ul class="filters__list">
-				<li><a href="#" class="filters__all is-active">all</a></li>
+		<!-- filter -->
+		<div class="filter js-filter">
+			<ul class="filter__tabs">
+				<li class="is-active"><a href="#">ALL</a></li>
 				<li><a href="#">Date Posted</a></li>
 				<li><a href="#">Most Relevant</a></li>
-				<li><a href="#">Position</a></li>
-				<li><a href="#">Company</a></li>
-				<li><a href="#">Location</a></li>
-				<li><a href="#">Salary</a></li>
-				<li><a href="#" class="filters__delete"><i></i></a></li>
+				<li class="is-more"><a href="#">Position</a></li>
+				<li class="is-more"><a href="#">Company</a></li>
+				<li class="is-more"><a href="#">Location</a></li>
+				<li class="is-more"><a href="#">Salary</a></li>
+				<li><button><i></i></button></li>
 			</ul>
-			<div class="m-filters">
-				<button class="m-filters__btn">view filters</button>
-				<ul class="m-fliters__list">
-					<li class="m-filters__item">
-						<div class="m-filters__title js-filter-btn">Date Posted</div>
-						<div class="m-filters__block js-filter-item">
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint mollitia optio quos commodi nam sunt in, animi sed nobis. Cupiditate quidem reprehenderit soluta facilis, veniam tempora illum error velit? Ipsam!
+			<button class="filter__toggle">Hide filters</button>
+			<div class="filter__in">
+				<div class="filter__item">
+					<div class="filter__tab-mob"><a href="#">ALL</a></div>
+				</div>
+				<div class="filter__item">
+					<div class="filter__tab-mob"><a href="#">Date Posted</a></div>
+				</div>
+				<div class="filter__item">
+					<div class="filter__tab-mob"><a href="#">Most Relevant</a></div>
+				</div>
+				<div class="filter__item">
+					<div class="filter__tab-mob"><a href="#">Position</a></div>
+					<div class="filter__content">
+						<div class="filter__type">Preferred Position</div>
+						<div class="filter__options">
+						 	<a href="#">All</a>
+						 	<a href="#">Estagio</a>
+						 	<a class="is-active" href="#">Junior</a>
+						 	<a href="#">Pleno</a>
+						 	<a href="#">Senior</a>
+						 	<a href="#">Gerencia</a>
 						</div>
-					</li>
-					<li class="m-filters__item">
-						<div class="m-filters__title js-filter-btn">Most Relevant</div>
-						<div class="m-filters__block js-filter-item">
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint mollitia optio quos commodi nam sunt in, animi sed nobis. Cupiditate quidem reprehenderit soluta facilis, veniam tempora illum error velit? Ipsam!
+					</div>
+				</div>
+				<div class="filter__item">
+					<div class="filter__tab-mob"><a href="#">Company</a></div>
+					<div class="filter__content">
+						<div class="filter__type">Preferred Company</div>
+						<div class="filter__options">
+						 	<a class="is-active">IBM (29)</a>
+						 	<a>Microsoft (5)</a>
+						 	<a>Havianas (18)</a>
+						 	<a>City (18)</a>
+						 	<a>Nike (3)</a>
+						 	<a>Bradesco (10)</a>
+						 	<a class="is-active">Coca-Cola (14)</a>
+						 	<a>City (18)</a>
+						 	<a>American Airlines (6)</a>
 						</div>
-					</li>
-					<li class="m-filters__item">
-						<div class="m-filters__title js-filter-btn">Position</div>
-						<div class="m-filters__block js-filter-item">
-							<ul class="m-filters__options">
-							 	<li>All</li>
-							 	<li>Estagio</li>
-							 	<li class="is-active">Junior</li>
-							 	<li>Pleno</li>
-							 	<li>Senior</li>
-							 	<li>Gerencia</li>
-							</ul>
-						</div>
-					</li>
-					<li class="m-filters__item">
-						<div class="m-filters__title js-filter-btn">Company</div>
-						<div class="m-filters__block js-filter-item">
-							<ul class="m-filters__options">
-							 	<li class="is-active">IBM (29)</li>
-							 	<li>Microsoft (5)</li>
-							 	<li>Havianas (18)</li>
-							 	<li>City (18)</li>
-							 	<li>Nike (3)</li>
-							 	<li>Bradesco (10)</li>
-							 	<li class="is-active">Coca-Cola (14)</li>
-							 	<li>City (18)</li>
-							 	<li>American Airlines (6)</li>
-							</ul>
-							<a href="#" class="m-filters__more">view more</a>
-						</div>
-					</li>
-					<li class="m-filters__item">
-						<div class="m-filters__title js-filter-btn">Location</div>
-						<div class="m-filters__block js-filter-item">
-							<p>What location(s) would you like to work in?</p>
-							<textarea class="m-filters__textarea js-textarea"></textarea>
-							<p>Distance</p>
-							<div class="m-filters__slider">
-								<div id="slider-range-min"></div>
-								<p>
-									<label for="amount">Até</label>
-									<input type="text" id="amount" readonly>
-									<label for="amount">km</label>
-								</p>
+					</div>
+				</div>
+				<div class="filter__item">
+					<div class="filter__tab-mob"><a href="#">Location</a></div>
+					<div class="filter__content">
+						<div class="filter__location">
+							<div class="filter__type">What location(s) would you like to work in?</div>
+							<label class="filter__location-area">
+								<a href="#">São Paulo</a>
+								<span class="filter__location-input">
+									<input class="js-location" type="text" placeholder="Enter a Location">
+								</span>
+							</label>
+							<div class="filter__location-footer">
+								<button class="btn btn_small btn_red">save locations</button>
+								<button class="btn btn_small btn_gray">Cancel</button>
+								<div class="filter__distance">
+									<div class="filter__distance-title">Distance</div>
+									<div class="filter__distance-range js-distance">
+										<div class="filter__distance-slider"></div>
+										<div class="filter__distance-value">Até <span>25</span> km</div>
+									</div>
+								</div>
 							</div>
 						</div>
-					</li>
-					<li class="m-filters__item">
-						<div class="m-filters__title js-filter-btn">Salary</div>
-						<div class="m-filters__block js-filter-item">
-							<ul class="m-filters__options">
-							 	<li class="is-active">Pleno<span> - A partir de R$ 1.000,00 (377)</span></li>
-							 	<li>Pleno<span>  - A partir de R$ 1.000,00 (377)</span></li>
-							 	<li>Pleno<span>  - A partir de R$ 1.000,00 (377)</span></li>
-							 	<li>Pleno<span>  - A partir de R$ 1.000,00 (377)</span></li>
+					</div>
+				</div>
+				<div class="filter__item">
+					<div class="filter__tab-mob"><a href="#">Salary</a></div>
+					<div class="filter__content">
+						<div class="filter__type">Preferred Salary</div>
+						<div class="filter__salary">
+							<div class="filter__salary-slider"></div>
+							<ul class="filter__salary-values">
+								<li>Estagio<span>A partir de R$ 1.000,00 (377)</span></li>
+								<li>Junior<span>A partir de R$ 1.000,00 (377)</span></li>
+								<li>Pleno<span>A partir de R$ 1.000,00 (377)</span></li>
+								<li>Senior<span>A partir de R$ 1.000,00 (377)</span></li>
 							</ul>
 						</div>
-					</li>
-				</ul>
+					</div>
+				</div>
 			</div>
 		</div>
 		<div class="results__count">Jobs 21 to 30 of 1,147</div>

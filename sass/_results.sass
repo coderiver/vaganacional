@@ -70,6 +70,216 @@
                     color: #fff
                 +r(1024)
                     width: 100px
+                    
+.filter
+    padding-bottom: 15px
+    border-bottom: 1px solid #dfe0e3
+    margin-bottom: 15px
+    +r(760)
+        background: #e9ebec
+        padding: 8px 15px 12px
+    .filter__toggle
+        display: none
+        +r(760)
+            display: block
+            width: 100%
+            height: 37px 
+            margin-bottom: 12px
+            background: #dcdcdc 
+            border-radius: 9px / 5px
+            font-size: 19px
+            text-transform: uppercase
+    .filter__tabs
+        display: table
+        width: 100%
+        background: #f0eeef
+        border-radius: 4px
+        padding: 12px
+        +box
+        +r(760)
+            display: none
+        &.is-active
+            border-radius: 4px 4px 0 0 
+        li
+            display: table-cell
+            padding-left: 12px
+            &:first-child
+                padding: 0
+            &:last-child
+                width: 30px
+            &.is-active
+                a
+                    background: #f4503e
+                    color: #fff
+        a, button
+            height: 29px
+            border-radius: 4px
+            background: #e2dfe0 
+            text-align: center
+            
+        a
+            display: block 
+            line-height: 29px
+            +source
+            text-decoration: none
+            color: #515a64
+            font-size: 15px
+        button
+            padding: 0 10px
+            font-size: 0
+            i
+                display: inline-block
+                +s(delete-gray)
+    .filter__item
+        display: none
+        padding: 20px 30px
+        border-radius: 0 0 4px 4px  
+        background: #E2DFE0 
+        +r(760)
+            display: block
+            padding: 7px 14px 14px
+            margin-bottom: 12px
+            border-radius: 9px / 5px
+            background: #FFF 
+    .filter__tab-mob
+        display: none 
+        a
+            position: relative
+            display: block
+            font-size: 19px
+            text-decoration: none
+        +r(760)
+            display: block
+    .filter__content
+        +r(760)
+            display: none
+    .filter__options
+        +clr
+        a
+            position: relative
+            float: left
+            margin-right: 8px
+            margin-bottom: 8px
+            padding: 0 13px 0 30px
+            height: 37px
+            line-height: 37px  
+            background: #e9ebec
+            font-size: 15px
+            +source-sb
+            color: #515a64
+            border-radius: 4px
+            cursor: pointer
+            text-decoration: none
+            span
+                +source
+                font-size: 13px 
+            &:before
+                content: "+"
+                position: absolute
+                top: 0
+                left: 11px
+                font-size: 15px
+            &.is-active
+                background: #515a64
+                color: #fff
+                &:before
+                    content: "-"
+                    left: 12px     
+    .filter__type
+        margin-bottom: 20px
+        font-size: 15px    
+    .filter__location
+        .filter__type
+            margin-bottom: 10px
+    .filter__location-input
+        display: block
+        min-width: 200px
+        padding-left: 8px
+        overflow: hidden
+        input
+            width: 100%
+            height: 34px
+            font-size: 15px
+    .filter__location-area
+        display: block
+        min-height: 60px
+        margin-bottom: 20px
+        padding: 14px
+        border-radius: 5px
+        background-color: #fff
+        a
+            position: relative
+            float: left
+            max-width: 350px
+            height: 34px
+            margin: 0 12px 12px 0
+            padding: 0 35px 0 10px
+            background-color: #efefef
+            border-radius: 3px 
+            font-size: 17px
+            color: #222E3A
+            text-decoration: none 
+            line-height: 34px
+            white-space: nowrap
+            overflow: hidden
+            text-overflow: ellipsis
+            &:after
+                content: ""
+                position: absolute
+                top: 50%
+                right: 10px
+                margin-top: -6px
+                +s(delete-gray) 
+    .filter__location-footer
+        +clr
+        .btn
+            float: right
+            margin-left: 10px 
+    .filter__distance
+        padding-right: 20px
+        overflow: hidden
+    .filter__distance-title
+        float: left
+        margin-right: 15px
+        font-size: 15px
+        opacity: .7  
+    .filter__distance-range
+        overflow: hidden
+        max-width: 420px
+        padding-top: 8px
+    .filter__distance-slider
+        margin-bottom: 10px
+    .filter__distance-value
+        text-align: center
+        color: $red
+        font-size: 15px 
+    .filter__salary
+        overflow: hidden
+    .filter__salary-slider
+        margin: 40px 12.5% 15px
+        .ui-widget-tip
+            position: absolute
+            top: -40px
+            left: 0
+            min-width: 100%
+            font-size: 15px
+            color: $red
+            white-space: nowrap
+            text-align: center  
+    .filter__salary-values
+        font-size: 0
+        text-align: center
+        li
+            display: inline-block
+            width: 25%
+            font-size: 15px
+            vertical-align: top
+            span
+                display: block
+                font-size: 12px
+                opacity: .7 
+        
+
 .m-filters
     display: none
     padding: 10px 42px 42px
@@ -77,7 +287,7 @@
     +r(760)
         display: block
     +r(480)
-        padding: 10px 25px 42px     
+        padding: 10px 25px 42px
     &__btn
         width: 100%
         height: 37px

@@ -69,7 +69,6 @@ head.ready(function() {
 	};
 
 // iu slider
-
 	$( "#slider-range-min" ).slider({
       range: "min",
       min: 1,
@@ -114,6 +113,79 @@ head.ready(function() {
     });
     $( "#hours" ).val( $( "#slider-hours" ).slider( "value" ) );
 
+
+    
+
+// filter
+function filter () {
+  var filter = $('.js-filter'),
+      filter_tabs = filter.find('.filter__tabs'),
+      fitler_item = filter.find('.filter__item'),
+      filter_nav = filter_tabs.find('a');
+
+  filter_nav.on('click', function () {
+    if (!$(this).parent().hasClass('is-active')) {
+      filter_nav.parent().removeClass('is-active');
+      $(this).parent().addClass('is-active');
+      if ($(this).parent().hasClass('is-more')) {
+        filter_tabs.addClass('is-active');
+        var index = $(this).parent().index();
+        fitler_item.slideUp();
+        fitler_item.eq(index).slideDown();
+      }
+      else {
+        fitler_item.slideUp();
+        filter_tabs.removeClass('is-active');
+      }
+    };
+  });
+
+  // location
+  var location = $('.js-location');
+  location.keypress(function (e) {
+    var key = e.which;
+    if(key == 13) {
+      var text = $(this).val()
+      $(this).parent().before('<a href="#">'+text+'</a>');
+      location.val('');
+    }
+  }); 
+
+  // distance
+  var distance = $('.js-distance'),
+      distance_slider = distance.find('.filter__distance-slider'),
+      distance_val = distance.find('.filter__distance-value span');
+  distance_slider.slider({
+    range: 'min',
+    value: 25,
+    min: 0,
+    max: 150,
+    slide: function( event, ui ) {
+      distance_val.html(ui.value);
+    }
+  });
+
+  // salary
+  var salary = $('.filter__salary'),
+      salary_slider = salary.find('.filter__salary-slider');
+  salary_slider.slider({
+    range: true,
+    min: 0,
+    max: 100000,
+    values: [10000, 40000],
+    create: function( event, ui ) {
+      salary_slider.find('.ui-widget-header').append('<div class="ui-widget-tip"></div>');
+    },
+    slide: function( event, ui ) {
+      salary_slider.find('.ui-widget-tip').html('R$ '+ui.values[0]+' to R$ '+ui.values[1]);
+    }
+  }); 
+  var salary_slider_first = salary_slider.slider('values', 0),
+      salary_slider_last = salary_slider.slider('values', 1);
+  salary_slider.find('.ui-widget-tip').html('R$ '+salary_slider_first+' to R$ '+salary_slider_last);
+
+}
+filter();
 
 // select
     function select() {
