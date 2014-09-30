@@ -253,5 +253,16 @@ filter();
 		});
 	};    
 
+  // skills list
+  function skills_list () {
+    var el = $('.js-skills-list'),
+        row = el.find('.skills__item');
+    row.find('input:radio').on('change', function () {
+      var value = $(this).next().text();
+      $(this).parent().parent().next().html(value);
+    });
+  }
+  skills_list();
+
 });
 

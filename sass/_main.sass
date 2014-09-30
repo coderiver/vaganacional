@@ -226,26 +226,42 @@
 		left: 0
 		
 // popups
-.overlay
+.popup
 	position: fixed
 	top: 0
 	left: 0
 	right: 0
 	bottom: 0
+	padding: 50px 0
 	background: rgba($darkblue, 0.7)
-	z-index: 100
-	
-.popup
-	position: absolute
-	top: 133px
-	left: 50%
-	width: 390px
-	margin-left: -195px
-	z-index: 101
-	border-radius: 10px
-	+r(768)
-		width: 300px
-		margin-left: -150px 
+	+vertical
+	overflow: auto
+	z-index: 999 
+	+r(760)
+		width: 100%
+		padding: 0
+	&.popup_import
+		.popup__center
+			width: 640px
+			max-width: 640px
+			+r(680)
+				width: 100%
+		.popup__in
+			position: relative
+			padding: 40px
+			border-radius: 10px
+			background: #edecec
+			z-index: 2
+			+r(760)
+				padding: 20px
+				border-radius: 0   
+	&__center
+		position: relative
+		display: inline-block
+		max-width: 390px
+		vertical-align: middle
+		text-align: left
+		font-size: 14px
 	&__in
 		position: relative
 		padding: 57px 40px 40px
@@ -305,6 +321,8 @@
 			+source-sb
 		.checkbox
 			float: left	
+			input[type="checkbox"] + span
+				padding-top: 0 
 	&__footer
 		margin-top: -10px
 		padding: 32px 40px 22px
@@ -351,17 +369,20 @@
 	display: inline-block
 	padding-top: 10px
 	input[type="checkbox"]
+		position: absolute
+		top: 12px
+		left: 0
 		opacity: 0 
 	input[type="checkbox"] + span
 		position: relative
-		padding-left: 15px
+		padding-left: 30px
 		padding-top: 3px
 		+nosel
 		&:before
 			content: ""
 			position: absolute
-			left: -20px
-			top: 0
+			left: 0
+			top: -1px
 			width: 20px
 			height: 20px
 			+box
@@ -372,8 +393,8 @@
 		&:after
 			content: ""
 			position: absolute
-			top: 5px
-			left: -16px
+			top: 4px
+			left: 4px
 			+s(checkbox)		 
 .social-btn
 	position: relative
@@ -484,11 +505,98 @@
 	+r(1100)
 		display: none  		   
 
-
-
-
-
-
+.import
+	.import__title
+		padding: 0 30px 12px 0
+		margin-bottom: 22px
+		border-bottom: 1px solid #cdced0 
+		+source-sb
+		font-size: 24px
+		color: #222E3A 
+		line-height: 1.2
+	.import__row
+		padding-bottom: 20px
+		margin-bottom: 22px
+		border-bottom: 1px solid #cdced0 
+		+clr
+	.import__cell
+		float: left
+		width: 48%
+		background: #FFF
+		border-radius: 5px 
+		+r(680)
+			width: 100%
+		&:first-child
+			margin-right: 4%
+			+r(680)
+				margin: 0 0 20px
+	.import__cell-title
+		display: table
+		width: 100%
+		border-radius: 5px 5px 0 0 
+		background: #e1e1e1 
+		span
+			display: table-cell
+			padding: 10px
+			text-align: right
+			font-size: 15px
+			color: #4c4c4c 
+			&:first-child
+				text-align: left
+	.import__cell-in
+		padding: 5px
+		.btn
+			width: 100%
+			text-transform: none
+	.import__footer
+		+clr
+		.btn
+			float: right
+			margin-left: 15px
+	.import__empty
+		height: 300px
+		margin-bottom: 20px
+		+vertical
+		span
+			display: inline-block
+			vertical-align: middle
+			font-size: 15px
+			color: #3E4853 
+	.import__list
+		height: 290px
+		padding: 5px
+		margin-bottom: 20px
+		overflow: auto
+		a
+			position: relative
+			display: block
+			padding: 5px 5px 5px 30px
+			border-bottom: 1px solid #d8dadd
+			text-decoration: none
+			color: #72777d
+			font-size: 15px  
+			&:before
+				content: ""
+				position: absolute
+				top: 10px
+				left: 7px
+				+s(delete-gray)
+	.import__area
+		>p
+			margin-bottom: 20px
+			font-size: 15px
+			color: #515151 
+		>textarea
+			width: 100% 
+			height: 156px
+			padding: 7px 10px
+			background: #FFF
+			border-radius: 10px
+			border: none
+			+box
+			+source
+			font-size: 15px
+			resize: vetical
 
 
 
