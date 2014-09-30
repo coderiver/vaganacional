@@ -339,9 +339,9 @@ h2.resp-accordion
         +r(600)
             display: none    
     &__content
-        overflow: hidden
+        display: table
     &__info
-        overflow: hidden
+        display: table
         font-family: Arial, sans-serif
         font-size: 15px
         +r(600)
@@ -372,13 +372,29 @@ h2.resp-accordion
             font-size: 16px
             padding: 0 5px
         ul
+            position: relative
             font-size: 0
             text-align: center
             li
                 display: inline-block
-                vertical-align: middle
+                padding-bottom: 4px
+                vertical-align: top
                 margin: 0 6px 
+                &.is-tooltip
+                    &:hover
+                        span
+                            display: block
+                        a
+                            +sp(plus2-h) 
+                            &:after
+                                content: ""
+                                position: absolute
+                                bottom: -10px
+                                left: 50%
+                                margin-left: -7px
+                                +arr(14,7,#f0efef,t)
                 a
+                    position: relative
                     display: inline-block
                     &.jobs__like
                         +s(heart)
@@ -386,6 +402,21 @@ h2.resp-accordion
                         +s(letter)
                     &.jobs__add
                         +s(plus2)
+                span
+                    display: none
+                    position: absolute
+                    top: 29px
+                    right: 0
+                    min-width: 120px
+                    padding: 10px
+                    border-radius: 10px 
+                    background: #f0efef
+                    font-size: 14px
+                    color: #656565 
+                    text-align: right
+                    a
+                        text-decoration: none
+                        color: #656565 
         +r(600)
             display: none                
     &__name

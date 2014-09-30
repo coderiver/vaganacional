@@ -123,8 +123,13 @@ $yellow: #fdbe37
 	vertical-align: top
 	font-size: 15px	
 
-
-
+body
+	+transition(all .2s ease)
+	&.is-sidebar
+		+transform(translate(-340px,0))
+		+r(480)
+			+transform(translate(-280px,0))
+		
 
 
 

@@ -18,14 +18,13 @@
 	width: 340px  
 	height: 100%
 	overflow: auto
-	border-left: 1px solid #2A323A  
+	//border-left: 1px solid #2A323A  
 	background: #2B3641 
 	+transform(translate(340px,0))
 	+transition(all .2s ease)
-	.is-sidebar &
-		+transform(translate(0,0))
-	+r(320)
-		width: 300px	
+	+r(480)
+		+transform(translate(280px,0))
+		width: 280px	
 	ul
 		list-style: none
 	a

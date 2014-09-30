@@ -44,10 +44,10 @@
 <!-- end topmenu -->
 <div class="submenu">
 	<ul>
-		<li><a href="#" class="is-active">Dashboard</a></li>
-		<li><a href="#">Inbox</a></li>
-		<li><a href="#">Connections</a></li>
-		<li><a href="#">Settings</a></li>
+		<li><a href="#" class="is-active">Temporary jobs</a></li>
+		<li><a href="#">Graduate jobs</a></li>
+		<li><a href="#">Immediate starts</a></li>
+		<li><a href="#">Jobs at Cummins</a></li>
 	</ul>
 </div>
 
@@ -79,7 +79,7 @@
 
 <!-- BEGIN content -->
 <div class="wrapper">
-	<div class="results results_mod">
+	<div class="results">
 		<div class="title">
 			<h4 class="h4"><strong>1,147</strong> results for <strong>Sales Executive jobs</strong></h4>
 			<div class="title__right">
@@ -98,7 +98,7 @@
 				<li class="is-more"><a href="#">Salary</a></li>
 				<li><button><i></i></button></li>
 			</ul>
-			<button class="filter__toggle">Hide filters</button>
+			<button class="filter__toggle" data-text-on="View filters" data-text-off="Hide filters">View filters</button>
 			<div class="filter__in">
 				<div class="filter__item">
 					<div class="filter__tab-mob"><a href="#">ALL</a></div>
@@ -152,14 +152,18 @@
 								</span>
 							</label>
 							<div class="filter__location-footer">
-								<button class="btn btn_small btn_red">save locations</button>
-								<button class="btn btn_small btn_gray">Cancel</button>
-								<div class="filter__distance">
-									<div class="filter__distance-title">Distance</div>
-									<div class="filter__distance-range js-distance">
-										<div class="filter__distance-slider"></div>
-										<div class="filter__distance-value">Até <span>25</span> km</div>
+								<div class="filter__location-cell">
+									<div class="filter__distance">
+										<div class="filter__distance-title">Distance</div>
+										<div class="filter__distance-range js-distance">
+											<div class="filter__distance-slider"></div>
+											<div class="filter__distance-value">Até <span>25</span> km</div>
+										</div>
 									</div>
+								</div>
+								<div class="filter__location-cell">
+									<button class="btn btn_small btn_red">save locations</button>
+									<button class="btn btn_small btn_gray">Cancel</button>
 								</div>
 							</div>
 						</div>
@@ -171,12 +175,12 @@
 						<div class="filter__type">Preferred Salary</div>
 						<div class="filter__salary">
 							<div class="filter__salary-slider"></div>
-							<ul class="filter__salary-values">
-								<li>Estagio<span>A partir de R$ 1.000,00 (377)</span></li>
-								<li>Junior<span>A partir de R$ 1.000,00 (377)</span></li>
-								<li>Pleno<span>A partir de R$ 1.000,00 (377)</span></li>
-								<li>Senior<span>A partir de R$ 1.000,00 (377)</span></li>
-							</ul>
+							<div class="filter__salary-values">
+								<a href="#">Estagio<span>A partir de R$ 1.000,00 (377)</span></a>
+								<a class="is-active" href="#">Junior<span>A partir de R$ 1.000,00 (377)</span></a>
+								<a href="#">Pleno<span>A partir de R$ 1.000,00 (377)</span></a>
+								<a href="#">Senior<span>A partir de R$ 1.000,00 (377)</span></a>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -198,7 +202,10 @@
 			 				<ul>
 			 					<li><a href="#" class="jobs__like"></a></li>
 			 					<li><a href="#" class="jobs__letter"></a></li>
-			 					<li><a href="#" class="jobs__add"></a></li>
+			 					<li class="is-tooltip">
+			 						<a href="#" class="jobs__add"></a>
+			 						<span><a href="#">View all Dell jobs</a></span>
+			 					</li>
 			 				</ul>
 			 			</div>
 			 			<div class="jobs__info">
@@ -220,7 +227,10 @@
 			 				<ul>
 			 					<li><a href="#" class="jobs__like"></a></li>
 			 					<li><a href="#" class="jobs__letter"></a></li>
-			 					<li><a href="#" class="jobs__add"></a></li>
+			 					<li class="is-tooltip">
+			 						<a href="#" class="jobs__add"></a>
+			 						<span><a href="#">View all Dell jobs</a></span>
+			 					</li>
 			 				</ul>
 			 			</div>
 			 			<div class="jobs__info">
@@ -242,7 +252,10 @@
 			 				<ul>
 			 					<li><a href="#" class="jobs__like"></a></li>
 			 					<li><a href="#" class="jobs__letter"></a></li>
-			 					<li><a href="#" class="jobs__add"></a></li>
+			 					<li class="is-tooltip">
+			 						<a href="#" class="jobs__add"></a>
+			 						<span><a href="#">View all Dell jobs</a></span>
+			 					</li>
 			 				</ul>
 			 			</div>
 			 			<div class="jobs__info">
@@ -264,7 +277,10 @@
 			 				<ul>
 			 					<li><a href="#" class="jobs__like"></a></li>
 			 					<li><a href="#" class="jobs__letter"></a></li>
-			 					<li><a href="#" class="jobs__add"></a></li>
+			 					<li class="is-tooltip">
+			 						<a href="#" class="jobs__add"></a>
+			 						<span><a href="#">View all Dell jobs</a></span>
+			 					</li>
 			 				</ul>
 			 			</div>
 			 			<div class="jobs__info">
@@ -286,7 +302,10 @@
 			 				<ul>
 			 					<li><a href="#" class="jobs__like"></a></li>
 			 					<li><a href="#" class="jobs__letter"></a></li>
-			 					<li><a href="#" class="jobs__add"></a></li>
+			 					<li class="is-tooltip">
+			 						<a href="#" class="jobs__add"></a>
+			 						<span><a href="#">View all Dell jobs</a></span>
+			 					</li>
 			 				</ul>
 			 			</div>
 			 			<div class="jobs__info">
@@ -308,7 +327,10 @@
 			 				<ul>
 			 					<li><a href="#" class="jobs__like"></a></li>
 			 					<li><a href="#" class="jobs__letter"></a></li>
-			 					<li><a href="#" class="jobs__add"></a></li>
+			 					<li class="is-tooltip">
+			 						<a href="#" class="jobs__add"></a>
+			 						<span><a href="#">View all Dell jobs</a></span>
+			 					</li>
 			 				</ul>
 			 			</div>
 			 			<div class="jobs__info">
@@ -330,7 +352,10 @@
 			 				<ul>
 			 					<li><a href="#" class="jobs__like"></a></li>
 			 					<li><a href="#" class="jobs__letter"></a></li>
-			 					<li><a href="#" class="jobs__add"></a></li>
+			 					<li class="is-tooltip">
+			 						<a href="#" class="jobs__add"></a>
+			 						<span><a href="#">View all Dell jobs</a></span>
+			 					</li>
 			 				</ul>
 			 			</div>
 			 			<div class="jobs__info">
@@ -352,7 +377,10 @@
 			 				<ul>
 			 					<li><a href="#" class="jobs__like"></a></li>
 			 					<li><a href="#" class="jobs__letter"></a></li>
-			 					<li><a href="#" class="jobs__add"></a></li>
+			 					<li class="is-tooltip">
+			 						<a href="#" class="jobs__add"></a>
+			 						<span><a href="#">View all Dell jobs</a></span>
+			 					</li>
 			 				</ul>
 			 			</div>
 			 			<div class="jobs__info">
